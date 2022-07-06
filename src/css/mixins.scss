@@ -1,0 +1,246 @@
+@function rem($size) {
+  $remSize: $size / $font-size;
+  @return $remSize * 1rem;
+}
+
+@mixin fz($size) {
+  font-size: $size;
+  font-size: rem($size);
+}
+
+@function lh($size1, $size2) {
+  $lh: $size2 / $size1;
+  @return $lh;
+}
+
+@mixin content() {
+  ul {
+    margin: 1em 0;
+    padding-left: 40px;
+
+    li {
+      list-style: disc;
+    }
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+@mixin headers() {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+}
+
+@mixin tr() {
+  transition: var(--transition);
+}
+
+@mixin gradient-txt($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  color: transparent;
+}
+
+@mixin typo-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+}
+
+@mixin typo-footnote {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@mixin typo-footnote-link {
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration-line: underline;
+}
+
+@mixin typo-numbers {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 94px;
+  line-height: 100%;
+}
+
+@mixin typo-small-numbers {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@mixin typo-link {
+  line-height: 132%;
+  text-decoration-line: underline;
+}
+
+@mixin typo-btn {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@mixin typo-heading-1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+@mixin typo-heading-2 {
+  font-weight: 500;
+  font-size: 44px;
+}
+
+@mixin typo-heading-3 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+@mixin typo-heading-4 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+@mixin typo-heading-slider {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+
+@mixin typo-paragraph-italic {
+  font-style: italic;
+  font-size: 34px;
+  line-height: 131.5%;
+}
+
+@mixin typo-paragraph-1 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+@mixin typo-paragraph-2 {
+  font-size: 24px;
+  line-height: 130%;
+}
+
+@mixin typo-paragraph-3 {
+  font-size: 20px;
+}
+
+@mixin typo-title-1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+@mixin typo-title-2 {
+  font-size: 36px;
+  line-height: 120%;
+}
+
+@mixin typo-title-3 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+@mixin typo-title-6 {
+  font-size: 28px;
+}
+
+@mixin point {
+  width: var(--point-size);
+  height: var(--point-size);
+  border-radius: 50%;
+  background: var(--squares);
+}
+
+@mixin point-top-left {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(0px - var(--point-size) / 2 - 0.5px);
+    left: calc(0px - var(--point-size) / 2 - 0.5px);
+    @include point;
+  }
+}
+
+@mixin point-top-right {
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(0px - var(--point-size) / 2 - 0.5px);
+    right: calc(0px - var(--point-size) / 2 - 0.5px);
+    @include point;
+  }
+}
+
+@mixin point-bottom-left {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: calc(0px - var(--point-size) / 2 - 0.5px);
+    left: calc(0px - var(--point-size) / 2 - 0.5px);
+    @include point;
+  }
+}
+
+@mixin point-bottom-right {
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: calc(0px - var(--point-size) / 2 - 0.5px);
+    right: calc(0px - var(--point-size) / 2 - 0.5px);
+    @include point;
+  }
+}
+
+
+
+
+
+

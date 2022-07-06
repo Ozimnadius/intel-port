@@ -1,0 +1,45 @@
+.banner {
+  border-bottom: 1px solid var(--divider-grid);
+  border-image: var(--gradient-btn) 1;
+
+  &__container {
+    padding-top: 20px;
+    min-height: 940px;
+    border-left: 1px solid var(--divider-grid);
+    border-right: 1px solid var(--divider-grid);
+    position: relative;
+    @include point-bottom-left;
+    @include point-bottom-right;
+
+    display: flex;
+    align-items: center;
+    padding-left: 65px;
+  }
+
+  &__title-big{
+    @include typo-heading-slider;
+    @include gradient-txt(var(--gradient-heading));
+    margin-bottom: 35px;
+  }
+
+  &__img{
+    display: none;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 52px;
+
+    p{
+      @include typo-paragraph-3;
+    }
+  }
+
+  &__btns{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}

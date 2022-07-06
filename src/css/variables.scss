@@ -1,0 +1,45 @@
+:root{
+  --font: Gilroy, Arial, sans-serif;
+  --font-size: 16px;
+  --font-weight: 400;
+  --line-height: 1.42;
+
+  --container-width: 1490px;
+  --container-padding: 0 0;
+
+  --white: #dbdbdb;
+  --logo-grey: #8f99b5;
+  --txt-dark: rgba(255, 255, 255, 0.5);
+  --yellow: #eaa521;
+  --orange-red: #ea4c1d;
+  --main-orange: #ef7c19;
+  --squares: #556898;
+  --divider-grid: #2a395b;
+  --accident: #7688e9;
+  --accident-2: #40398c;
+  --back-frame: #151741;
+
+  --txt: var(--white);
+  --bg: #050c1c;
+  --link: var(--yellow);
+  --link-hover: var(--orange-red);
+
+  --gradient-arrow: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  --gradient-heading: linear-gradient(90deg, #e8edfe -13.08%, rgba(139, 162, 242, 0) 113.65%);
+  --gradient-arrow-2: linear-gradient(90deg, rgba(65, 57, 140, 0) 0%, #ea4c1c 100%);
+  --gradient-btn: linear-gradient(86.99deg, #6266b8 4.45%, #994a8c 59.14%, #e74c55 100%);
+  --gradient-go: linear-gradient(291.3deg, #151843 28.05%, #060c20 75.12%);
+  --gradient-grid: linear-gradient(90deg, #40398c 24.82%, #9e434f 41.8%, #d39117 53.38%, #9d4350 63.87%, #463a88 77.79%);
+  --gradient-radial: radial-gradient(50.09% 50.09% at 45.71% 49.91%, #f08119 0%, #9536df 100%);
+  --gradient-violet: linear-gradient(63.18deg, #4e539b -0.11%, #0d0e28 92.25%);
+
+  --transition: 0.3s;
+
+  --point-size: 7px;
+
+  @media (max-width: 1919.98px){
+    --container-width: 1320px;
+    --container-padding: 0 20px;
+  }
+}
+

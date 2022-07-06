@@ -1,0 +1,38 @@
+.header{
+  border-bottom:1px solid var(--divider-grid);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__logo{
+    margin-right: 15px;
+  }
+
+  &__container{
+    border-left: 1px solid var(--divider-grid);
+    border-right: 1px solid var(--divider-grid);
+    position: relative;
+    @include point-bottom-left;
+    @include point-bottom-right;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 65px;
+  }
+
+  &__tel{
+    a{
+      font-size: 18px;
+      font-weight: 600;
+      @include tr;
+
+      &:hover{
+        color: var(--yellow);
+      }
+    }
+  }
+
+}

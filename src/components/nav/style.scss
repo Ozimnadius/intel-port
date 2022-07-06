@@ -1,0 +1,25 @@
+.nav{
+  display: flex;
+
+  &__item{
+    @include tr;
+    &:hover{
+      color: var(--yellow);
+    }
+  }
+
+  &__link{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 30px 27px;
+    display: block;
+  }
+
+  &__drop{
+    display: none;
+  }
+}
+
+.subnav{
+
+}

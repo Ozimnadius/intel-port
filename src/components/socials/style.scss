@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &__item{
+
+    &:hover{
+      color: var(--yellow);
+    }
+    svg{
+      path {
+        fill: currentColor;
+        @include tr;
+      }
+    }
+  }
+}
