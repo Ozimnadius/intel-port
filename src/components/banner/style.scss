@@ -1,19 +1,13 @@
 .banner {
   border-bottom: 1px solid var(--divider-grid);
-  border-image: var(--gradient-btn) 1;
+  border-image: var(--gradient-grid) 1;
 
   &__container {
     padding-top: 20px;
     min-height: 940px;
-    border-left: 1px solid var(--divider-grid);
-    border-right: 1px solid var(--divider-grid);
-    position: relative;
-    @include point-bottom-left;
-    @include point-bottom-right;
-
     display: flex;
     align-items: center;
-    padding-left: 65px;
+    @include point-bottom-left;
   }
 
   &__title-big{

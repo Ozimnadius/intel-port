@@ -1,0 +1,112 @@
+.recs {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid var(--divider-grid);
+
+  &__top {
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav{
+    display: flex;
+  }
+
+  &__arr{
+    color: var(--divider-grid);
+    padding: 10px;
+    @include tr;
+    
+    &:hover{
+      color: var(--yellow);
+    }
+    svg{
+      display: block;
+      circle{
+        stroke: currentColor;
+      }
+      path{
+        fill: currentColor;
+      }
+    }
+  }
+
+  &__slide {
+    width: 797px;
+  }
+}
+
+.rec {
+  box-sizing: border-box;
+  background: var(--gradient-go);
+  padding: 65px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+
+  &__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__face{
+    --offset: 10px;
+
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    border: 1px solid var(--divider-grid);
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: var(--offset);
+      bottom: var(--offset);
+      left: var(--offset);
+      right: var(--offset);
+      border-radius: 50%;
+      border: 1px solid var(--divider-grid);
+    }
+
+    img{
+      display: block;
+      position: absolute;
+      top: calc(var(--offset)*2);
+      bottom: calc(var(--offset)*2);
+      left: calc(var(--offset)*2);
+      right: calc(var(--offset)*2);
+      border-radius: 50%;
+    }
+  }
+
+  &__name{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__prof{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__desc{
+    @include typo-text;
+    color: var(--txt-dark);
+    margin-bottom: 35px;
+  }
+
+  &__link{
+    font-size: 18px;
+  }
+}

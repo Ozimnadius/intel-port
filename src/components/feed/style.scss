@@ -1,0 +1,49 @@
+.feed{
+  background-image: var(--gradient-go);
+
+  &__container{
+    border-color: transparent;
+    padding-top: 65px;
+    padding-bottom: 95px;
+  }
+
+  &__top{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  &__title{
+    @include typo-title-1;
+  }
+
+  &__title-small{
+   @include typo-title-3;
+  }
+
+  &__text{
+    @include typo-paragraph-3;
+  }
+
+  &__fields{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__field{
+    flex-grow: 1;
+
+    &--select{
+      width: 470px;
+      flex-grow: initial;
+    }
+  }
+
+  &__submit{
+    width: 230px;
+    height: 60px;
+  }
+}

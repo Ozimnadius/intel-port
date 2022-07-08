@@ -1,6 +1,6 @@
 <div class="banner" style="background-image:url(<?= $picture["desctop"] ?>)">
     <div class="container">
-        <div class="banner__container">
+        <div class="container-inner banner__container">
             <div class="banner__wrap">
                 <? if (isset($title)): ?>
                     <div class="banner__title">
@@ -28,4 +28,5 @@
             </div>
         </div>
     </div>
+
 </div>

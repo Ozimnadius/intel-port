@@ -1,0 +1,53 @@
+.accept {
+
+  &__input {
+    display: none;
+
+    &:checked + .accept__fake {
+      .accept__check {
+        svg {
+          &:nth-child(1) {
+            display: none;
+          }
+
+          &:nth-child(2) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &__fake {
+    display: flex;
+    gap: 15px;
+    user-select: none;
+  }
+
+  &__check {
+    svg {
+      display: none;
+
+      &:nth-child(1) {
+        display: block;
+      }
+    }
+  }
+
+  &__content {
+    p {
+      color: var(--txt-dark);
+      @include typo-footnote;
+
+      a {
+        color: var(--orange-red);
+        @include typo-footnote-link;
+        @include tr;
+
+        &:hover {
+          color: var(--yellow);
+        }
+      }
+    }
+  }
+}

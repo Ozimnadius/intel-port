@@ -1,6 +1,6 @@
 <header class="header">
     <div class="container">
-        <div class="header__container">
+        <div class="container-inner header__container">
 
             <div class="header__logo">
                 <a href="/">

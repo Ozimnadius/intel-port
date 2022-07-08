@@ -1,0 +1,13 @@
+.title{
+  color: var(--yellow);
+  @include typo-title-6;
+}
+
+.link{
+  color: var(--yellow);
+  text-decoration: underline;
+  @include tr;
+  &:hover{
+    color: var(--orange-red);
+  }
+}
