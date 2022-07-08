@@ -1566,6 +1566,44 @@ textarea {
   --deg: 360deg;
 }
 
+.index-lics__nav {
+  position: absolute;
+  z-index: 100;
+  top: 70px;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.index-lics__arr {
+  pointer-events: all;
+  padding: 0 15px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.index-lics__arr:hover {
+  color: var(--orange-red);
+}
+
+.index-lics__arr.swiper-button-disabled {
+  color: var(--txt-dark);
+}
+
 .index-lics__swiper {
   position: absolute;
   top: 0;

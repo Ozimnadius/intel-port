@@ -5,5 +5,9 @@ window.addEventListener('load', function (){
         centeredSlides: true,
         spaceBetween: -40,
         initialSlide: 1,
+        navigation: {
+            nextEl: '.index-lics__next',
+            prevEl: '.index-lics__prev',
+        },
     });
 });
