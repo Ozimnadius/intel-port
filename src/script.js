@@ -3,4 +3,5 @@
 // @prepros-append components/select/script.js
 // @prepros-append components/recs/script.js
 // @prepros-append components/index-lics/script.js
+// @prepros-append components/partners/script.js
 

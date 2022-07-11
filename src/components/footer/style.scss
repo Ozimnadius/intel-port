@@ -1,4 +1,130 @@
-.footer{
-  height: 200px;
-  background-color: black;
+.footer {
+
+  &__container{
+    border-color: transparent;
+    max-width: calc(1130px + 130px);
+    margin: 0 auto;
+  }
+
+  &__top{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    border-bottom: 1px dashed var(--accident);
+    display:grid;
+    grid-template-columns: 1fr 265px;
+    gap: 20px;
+  }
+
+  &__right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__city{
+    margin-bottom: 20px;
+  }
+
+  &__tel{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--yellow);
+    margin-bottom: 25px;
+    @include tr;
+
+    &:hover{
+      color: var(--orange-red);
+    }
+  }
+
+  &__addr{
+    color: var(--txt-dark);
+    margin-bottom: 20px;
+  }
+
+  &__emails{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+  &__email{
+    a{
+      color: var(--yellow);
+      @include tr;
+
+      &:hover{
+        color: var(--orange-red);
+      }
+    }
+  }
+
+  &__btn{
+    border-color:var(--yellow);
+  }
+
+  .select-city{
+    margin-left: -20px;
+
+    &:hover{
+      color: var(--yellow);
+    }
+
+    &__item{
+      background: var(--bg);
+      justify-content: flex-start;
+      height: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+
+      &:hover{
+
+        &:before{
+          display: none;
+        }
+      }
+
+      svg{
+       path {
+         stroke: currentColor;
+       }
+      }
+
+      &:not(:nth-child(1)){
+        color: var(--txt);
+        &:hover{
+          background: var(--divider-grid);
+            color: var(--txt);
+
+
+        }
+      }
+
+
+    }
+  }
+
+  &__bottom{
+    padding-top: 45px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--txt-dark);
+  }
+
+  &__policy{
+    text-decoration: underline;
+    @include tr;
+
+    &:hover{
+      color: var(--yellow);
+    }
+  }
+
+
 }

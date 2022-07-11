@@ -112,18 +112,7 @@
   }
 
   &__arr {
-    pointer-events: all;
     padding: 0 15px;
-    @include tr;
-
-    &:hover {
-      color: var(--orange-red);
-
-    }
-
-    &.swiper-button-disabled{
-      color: var(--txt-dark);
-    }
   }
 
   &__swiper {

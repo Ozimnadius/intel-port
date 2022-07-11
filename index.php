@@ -45,6 +45,12 @@
     <div class="page__section">
         <? component("index-lics") ?>
     </div>
+    <div class="page__section">
+        <? component("partners") ?>
+    </div>
+    <div class="page__section">
+        <? component('index-contacts') ?>
+    </div>
 
 </div>
 <!-- END main -->

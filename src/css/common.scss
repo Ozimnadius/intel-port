@@ -11,3 +11,16 @@
     color: var(--orange-red);
   }
 }
+
+.arr{
+  pointer-events: all;
+  @include tr;
+
+  &:hover {
+    color: var(--orange-red);
+  }
+
+  &.swiper-button-disabled{
+    color: var(--txt-dark);
+  }
+}

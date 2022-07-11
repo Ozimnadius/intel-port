@@ -1,0 +1,140 @@
+.partners {
+  border-bottom: 1px solid var(--divider-grid);
+
+  &__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__desc{
+    height: 230px;
+    position: relative;
+  }
+
+  &__content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+
+    p{
+      max-width: 510px;
+      color: var(--txt-dark);
+    }
+  }
+
+  &__slider {
+    position: relative;
+    margin-bottom: 150px;
+  }
+
+  &__swiper {
+    margin: 0 -200px;
+  }
+
+  &__slide {
+    opacity: .3;
+    pointer-events: none;
+
+    &.swiper-slide-active {
+      pointer-events: all;
+      opacity: 1;
+    }
+  }
+
+  &__grid{
+    --offset: 7.5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: calc(0px - var(--offset));
+    width: calc(100% + 15px);
+  }
+
+  &__nav {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+
+  &__pag {
+    position: absolute;
+    top: calc(100% + 82px);
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+
+    .swiper-pagination-bullet {
+      width: 80px;
+      height: 7px;
+      background: var(--back-frame);
+      transform: none;
+      border-radius: 0;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--orange-red);
+    }
+
+  }
+
+  &__txt {
+    @include typo-paragraph-3;
+    color: var(--txt-dark);
+    text-align: center;
+  }
+
+}
+
+.partner {
+  background: var(--back-frame);
+  position: relative;
+  padding: var(--offset);
+  background-clip: content-box;
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: var(--offset);
+    bottom: var(--offset);
+    left: var(--offset);
+    right: var(--offset);
+    background: var(--gradient-violet);
+    opacity: 0;
+    @include tr;
+  }
+
+  img {
+    position: relative;
+    z-index: 1;
+  }
+}

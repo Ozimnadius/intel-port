@@ -1,5 +1,15 @@
 <?php
 $GLOBALS['path'] = $_SERVER["DOCUMENT_ROOT"];
+$GLOBALS['emails'] = array(
+    "info"=>"info@intel-port.ru",
+    "quality"=>"quality@intel-port.ru",
+    "support"=>"support@intel-port.ru"
+);
+$GLOBALS["addrs"]= array(
+    "moscow"=>"125124, г. Москва, Вн. Тер. г. Муниципальный округ Беговой,  ул. 3-я Ямского поля, дом 28, помещ. XII/77",
+    "petersburg"=>"125124, г. Москва, Вн. Тер. г. Муниципальный округ Беговой,  ул. 3-я Ямского поля, дом 28, помещ. XII/77",
+
+);
 $GLOBALS['nav'] = array(
     array(
         "title"=>"Услуги",
@@ -87,5 +97,4 @@ $GLOBALS['nav'] = array(
             )
         )
     ),
-
 );
