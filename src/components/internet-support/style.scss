@@ -1,0 +1,24 @@
+.internet-support {
+  &__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  &__left{
+    padding-top: 65px;
+  }
+
+  &__title{
+    margin-bottom: 30px;
+  }
+
+  &__content{
+    max-width: 550px;
+  }
+}

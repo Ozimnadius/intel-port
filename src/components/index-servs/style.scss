@@ -1,5 +1,4 @@
 .index-servs{
-  border-bottom: 1px solid var(--divider-grid);
 
   &__container{
     display:grid;
@@ -24,10 +23,11 @@
 
   &__btn{
     width: 780px;
-    padding: 30px 30px 30px 380px;
+    padding: 30px 18px 30px 380px;
     text-align: left;
     border-bottom: 1px solid var(--divider-grid);
     font-size: 24px;
+    border-right: 12px solid transparent;
 
     &:last-child{
       border-bottom: none;
@@ -36,6 +36,7 @@
     &.active{
       background: var(--gradient-go);
       color: var(--yellow);
+      border-right-color: var(--accident);
     }
   }
 

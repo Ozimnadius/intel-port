@@ -26,17 +26,17 @@
     &:nth-child(1) {
       .index-desc {
         &__left{
-          &:before{
-            content: '';
-            display: block;
-            height: 1px;
-            width: 971px;
-            background: var(--gradient-grid);
-            position: absolute;
-            z-index: 1;
-            right: -190px;
-            bottom: -1px;
-          }
+          //&:before{
+          //  content: '';
+          //  display: block;
+          //  height: 1px;
+          //  width: 971px;
+          //  background: var(--gradient-grid);
+          //  position: absolute;
+          //  z-index: 1;
+          //  right: -190px;
+          //  bottom: -1px;
+          //}
         }
       }
     }

@@ -1,6 +1,10 @@
 .title{
   color: var(--yellow);
   @include typo-title-6;
+
+  &--big{
+    @include typo-title-2;
+  }
 }
 
 .link{
@@ -23,4 +27,28 @@
   &.swiper-button-disabled{
     color: var(--txt-dark);
   }
+}
+
+.border-top{
+  border-top: 1px solid var(--divider-grid);
+}
+
+.border-bottom{
+  border-bottom: 1px solid var(--divider-grid);
+}
+
+.point-top-left{
+  @include point-top-left;
+}
+
+.point-top-right{
+  @include point-top-right;
+}
+
+.point-bottom-left{
+  @include point-bottom-left;
+}
+
+.point-bottom-right{
+  @include point-bottom-right;
 }

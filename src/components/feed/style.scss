@@ -1,6 +1,15 @@
 .feed{
   background-image: var(--gradient-go);
 
+  &--inner{
+    background: none;
+
+    .feed__container{
+      background-image: var(--gradient-go);
+      border: none;
+    }
+  }
+
   &__container{
     border-color: transparent;
     padding-top: 65px;
@@ -23,6 +32,15 @@
    @include typo-title-3;
   }
 
+  &__title-icon{
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    @include typo-title-3;
+  }
+
   &__text{
     @include typo-paragraph-3;
   }
@@ -35,6 +53,10 @@
 
   &__field{
     flex-grow: 1;
+
+    &--addr{
+      flex-grow: 10;
+    }
 
     &--select{
       width: 470px;

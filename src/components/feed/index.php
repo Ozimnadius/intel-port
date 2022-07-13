@@ -1,8 +1,14 @@
-<div class="feed">
+<? $default = array(
+    "policy" => true
+);
+extract(array_merge($default, $vars));?>
+
+<div class="feed <?=$class ?>">
     <div class="container">
         <div class="container-inner feed__container">
             <form action="/" method="post" class="feed__form">
                 <div class="feed__top">
+                    <? if(!isset($titleIcon)): ?>
                     <div class="feed__col">
                         <? if (isset($titleSmall)): ?>
                             <div class="feed__title-small"><?= $titleSmall ?></div>
@@ -16,8 +22,21 @@
                             <div class="feed__text"><?= $text ?></div>
                         <? endif; ?>
                     </div>
+                    <? else: ?>
+                    <div class="feed__title-icon">
+                        <?=$titleIcon ?>
+                    </div>
+                    <? endif; ?>
                 </div>
                 <div class="feed__fields">
+                    <? if (in_array("addr", $fields)): ?>
+                        <div class="feed__field feed__field--addr">
+                            <input type="text"
+                                   name="addr"
+                                   class="input"
+                                   placeholder="Введите адрес">
+                        </div>
+                    <? endif; ?>
                     <? if (in_array("name", $fields)): ?>
                         <div class="feed__field">
                             <input type="text"
@@ -67,14 +86,15 @@
                         <span><?= $btnName ?></span>
                     </button>
                 </div>
-                <div class="feed__policy">
-                    <? component("accept", array(
-                        "name" => "accept",
-                        "content" => '<p>Согласен на обработку персональных данных в соответствии с <a href="/">Политикой конфиденциальности.</a></p>'
-                    )) ?>
-                </div>
+                <? if ($policy): ?>
+                    <div class="feed__policy">
+                        <? component("accept", array(
+                            "name" => "accept",
+                            "content" => '<p>Согласен на обработку персональных данных в соответствии с <a href="/">Политикой конфиденциальности.</a></p>'
+                        )) ?>
+                    </div>
+                <? endif; ?>
             </form>
         </div>
     </div>
-
 </div>

@@ -1,0 +1,61 @@
+.internet-about {
+
+  &__container{
+    padding-top: 110px;
+    padding-bottom: 110px;
+    @include point-bottom-left;
+  }
+
+  &__grid{
+    display:grid;
+    grid-template-columns: 595fr 680fr;
+    gap: 75px;
+  }
+
+  &__img{
+    border: 1px dashed var(--divider-grid);
+    position: relative;
+    --offset: 20px;
+
+    &:before{
+      content: '';
+      display: block;
+      padding-top: calc(399/595*100%);
+    }
+
+    img {
+      position: absolute;
+      top: var(--offset);
+      left: var(--offset);
+      object-fit: cover;
+      width: calc(100% - var(--offset)*2);
+      height: calc(100% - var(--offset)*2);
+    }
+  }
+
+  &__title{
+    margin-bottom: 40px;
+  }
+
+  &__ul{
+    display:grid;
+    gap: 25px;
+  }
+
+  &__li{
+    @include typo-text;
+    padding-left: 45px;
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--squares);
+      position: absolute;
+      left: 0;
+      top: 7px;
+    }
+  }
+}

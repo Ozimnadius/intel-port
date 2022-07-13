@@ -1,25 +1,52 @@
-.nav{
+.nav {
   display: flex;
 
-  &__item{
+  &__item {
+    position: relative;
     @include tr;
-    &:hover{
+
+    &:hover {
       color: var(--yellow);
+
+      .nav__drop {
+        display: block;
+      }
     }
   }
 
-  &__link{
+  &__link {
     font-size: 18px;
     font-weight: 600;
     padding: 30px 27px;
     display: block;
   }
 
-  &__drop{
+  &__drop {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
 
-.subnav{
+.subnav {
+  width: 310px;
+  color: var(--txt);
+  border: 1px solid var(--divider-grid);
+  background: var(--back-frame);
 
+  &__item{
+    display: block;
+    padding: 10px 20px;
+    border-bottom:1px solid var(--divider-grid);
+    @include tr;
+
+    &:last-child{
+      border-bottom: none;
+    }
+
+    &:hover{
+      background-color: var(--accident);
+    }
+  }
 }

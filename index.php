@@ -15,7 +15,7 @@
     <div class="page__section">
         <? component("index-desc") ?>
     </div>
-    <div class="page__section">
+    <div class="page__section border-bottom">
         <? component('index-servs') ?>
     </div>
     <div class="page__section">
@@ -25,13 +25,13 @@
             "btnName"=>"Подключить"
         )); ?>
     </div>
-    <div class="page__section">
+    <div class="page__section border-bottom">
         <? component("index-about") ?>
     </div>
-    <div class="page__section">
+    <div class="page__section border-bottom">
         <? component("recs") ?>
     </div>
-    <div class="page__section">
+    <div class="page__section border-bottom">
         <? component("advantages") ?>
     </div>
     <div class="page__section">
@@ -42,10 +42,10 @@
             "btnName"=>"Проверить"
         )); ?>
     </div>
-    <div class="page__section">
+    <div class="page__section border-bottom border-top">
         <? component("index-lics") ?>
     </div>
-    <div class="page__section">
+    <div class="page__section border-bottom">
         <? component("partners") ?>
     </div>
     <div class="page__section">

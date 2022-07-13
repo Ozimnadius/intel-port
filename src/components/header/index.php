@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header border-bottom">
     <div class="container">
         <div class="container-inner header__container">
 

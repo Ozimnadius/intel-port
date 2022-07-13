@@ -2,6 +2,13 @@
     <div class="container">
         <div class="container-inner banner__container">
             <div class="banner__wrap">
+                <? if (isset($bread)): ?>
+                    <div class="banner__bread">
+                        <? component("bread", array(
+                            "list" => $bread
+                        )) ?>
+                    </div>
+                <? endif; ?>
                 <? if (isset($title)): ?>
                     <div class="banner__title">
                         <?= $title ?>
@@ -9,14 +16,14 @@
                 <? endif; ?>
                 <? if (isset($titleBig)): ?>
                     <div class="banner__title-big">
-                        <?=$titleBig?>
+                        <?= $titleBig ?>
                     </div>
                 <? endif; ?>
                 <div class="banner__img">
                     <img src="<?= $picture["mobile"] ?>">
                 </div>
                 <div class="banner__content">
-                    <?= $content?>
+                    <?= $content ?>
                 </div>
                 <div class="banner__btns">
                     <? component("btn") ?>

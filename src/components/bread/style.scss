@@ -1,0 +1,24 @@
+.bread{
+  @include typo-text;
+  color: var(--txt-dark);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+
+
+  &__sep{
+    svg{
+      display: block;
+    }
+  }
+
+  a.bread__item{
+    @include tr;
+
+    &:hover{
+      color: var(--yellow);
+    }
+  }
+
+}
