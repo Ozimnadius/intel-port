@@ -1,0 +1,56 @@
+.gradient {
+
+  &__container {
+    background: linear-gradient(45deg, #40398c 24.82%, #9e434f 41.8%, #d39117 53.38%, #9d4350 63.87%, #463a88 77.79%);
+    background-size: 200% 100%;
+    animation: gradient-animation 30s ease infinite;
+    border: none;
+
+    display: grid;
+    gap: 1px;
+    padding: 1px;
+    background-clip: padding-box;
+  }
+
+  &__top{
+    background: var(--bg);
+    position: relative;
+    padding: 60px;
+    @include point-bottom-left;
+    @include point-bottom-right;
+  }
+
+  &__title{
+    color: var(--yellow);
+    @include typo-title-2;
+    text-align: center;
+  }
+
+  &__bottom {
+    position: relative;
+    @include point-bottom-left;
+    @include point-bottom-right;
+  }
+
+  &__sub{
+    text-align: center;
+    padding: 70px;
+    @include typo-paragraph-2;
+    background: var(--bg);
+    position: relative;
+    @include point-bottom-left;
+    @include point-bottom-right;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}

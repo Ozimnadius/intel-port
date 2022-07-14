@@ -1,0 +1,18 @@
+.services-content {
+
+  &__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &__title{
+    margin-bottom: 75px;
+    @include typo-paragraph-1;
+  }
+
+  &__txt{
+    margin-top: 55px;
+    @include typo-text;
+    color: var(--txt-dark);
+  }
+}

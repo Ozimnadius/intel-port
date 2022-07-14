@@ -1,31 +1,32 @@
 <? $default = array(
     "policy" => true
 );
-extract(array_merge($default, $vars));?>
+extract(array_merge($default, $vars));
+?>
 
-<div class="feed <?=$class ?>">
+<div class="feed <?= $class ?>">
     <div class="container">
         <div class="container-inner feed__container">
             <form action="/" method="post" class="feed__form">
                 <div class="feed__top">
-                    <? if(!isset($titleIcon)): ?>
-                    <div class="feed__col">
-                        <? if (isset($titleSmall)): ?>
-                            <div class="feed__title-small"><?= $titleSmall ?></div>
-                        <? endif; ?>
-                        <? if (isset($title)): ?>
-                            <div class="feed__title"><?= $title ?></div>
-                        <? endif; ?>
-                    </div>
-                    <div class="feed__col">
-                        <? if (isset($text)): ?>
-                            <div class="feed__text"><?= $text ?></div>
-                        <? endif; ?>
-                    </div>
+                    <? if (!isset($titleIcon)): ?>
+                        <div class="feed__col">
+                            <? if (isset($titleSmall)): ?>
+                                <div class="feed__title-small"><?= $titleSmall ?></div>
+                            <? endif; ?>
+                            <? if (isset($title)): ?>
+                                <div class="feed__title"><?= $title ?></div>
+                            <? endif; ?>
+                        </div>
+                        <div class="feed__col">
+                            <? if (isset($text)): ?>
+                                <div class="feed__text"><?= $text ?></div>
+                            <? endif; ?>
+                        </div>
                     <? else: ?>
-                    <div class="feed__title-icon">
-                        <?=$titleIcon ?>
-                    </div>
+                        <div class="feed__title-icon">
+                            <?= $titleIcon ?>
+                        </div>
                     <? endif; ?>
                 </div>
                 <div class="feed__fields">
@@ -90,7 +91,7 @@ extract(array_merge($default, $vars));?>
                     <div class="feed__policy">
                         <? component("accept", array(
                             "name" => "accept",
-                            "content" => '<p>Согласен на обработку персональных данных в соответствии с <a href="/">Политикой конфиденциальности.</a></p>'
+                            "content" => '<p>Согласен на обработку персональных данных в соответствии с <a href="/policy/">Политикой конфиденциальности.</a></p>'
                         )) ?>
                     </div>
                 <? endif; ?>

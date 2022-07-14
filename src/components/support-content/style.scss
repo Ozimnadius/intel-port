@@ -1,0 +1,10 @@
+.support-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+
+  &__item{
+    padding-top: 90px;
+    padding-left: 90px;
+  }
+}

@@ -1,0 +1,36 @@
+.protect-grid{
+  @extend .internet-indicators;
+
+  &__item{
+    @extend .internet-indicators__item;
+    background: var(--bg);
+    padding: 50px 25px 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    &:nth-child(1){
+      &:before{
+        display: none;
+      }
+    }
+
+    &:nth-child(5){
+      &:after{
+        display: none;
+      }
+    }
+  }
+
+  &__title{
+    @include typo-paragraph-3;
+    color: var(--yellow);
+  }
+
+  &__txt{
+    @include typo-text;
+  }
+
+}

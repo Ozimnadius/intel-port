@@ -1,0 +1,24 @@
+.vpn-indicators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+
+  &__item{
+    background: var(--bg);
+    padding: 70px 50px 190px;
+    --margin: 20px;
+
+    h3{
+      @include typo-paragraph-2;
+      color: var(--yellow);
+      margin-top: calc(var(--margin)*2);
+      margin-bottom: var(--margin);
+    }
+
+    p{
+      @include typo-text;
+      color: var(--txt-dark);
+      margin: var(--margin) 0;
+    }
+  }
+}

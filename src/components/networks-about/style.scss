@@ -1,0 +1,33 @@
+.networks-about{
+
+  &__container{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+    @include point-bottom-left;
+    @include point-bottom-right;
+  }
+
+  &__list{
+    margin-bottom: 55px;
+  }
+
+  &__desc{
+    margin-bottom: 70px;
+  }
+
+  &__advantages{
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--gradient-grid);
+    }
+  }
+
+}
+

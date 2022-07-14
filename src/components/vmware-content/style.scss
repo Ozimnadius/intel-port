@@ -1,0 +1,96 @@
+.vmware-content{
+
+  &__grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1px;
+    margin-bottom: 1px;
+  }
+
+  &__item{
+    background: var(--bg);
+    padding: 70px 100px;
+    position: relative;
+
+    &:nth-child(1){
+      @include point-bottom-right;
+    }
+  }
+
+  &__title{
+    @include typo-paragraph-3;
+    color: var(--yellow);
+    margin-bottom: 20px;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p{
+      @include typo-text;
+    }
+
+    ul{
+      list-style: disc;
+      padding-left: 20px;
+    }
+  }
+
+  &__bottom{
+    background: var(--bg);
+    padding: 75px 230px 90px;
+
+    display:grid;
+    grid-template-columns: 460px auto;
+    gap: 160px;
+    align-items: flex-start;
+  }
+
+  &__desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h3{
+      @include typo-paragraph-3;
+      color: var(--yellow);
+    }
+
+    p,ul,li{
+      @include typo-text;
+    }
+
+    ul{
+      list-style: disc;
+      padding-left: 15px;
+    }
+  }
+
+  &__recom{
+    width: 290px;
+    padding: 30px;
+    border: 1px solid var(--yellow);
+    position: relative;
+    line-height: 132%;
+
+    &:before{
+      content: url("/images/icons/stars.svg");
+      display: block;
+      background: var(--bg);
+      padding: 0 3px;
+      position: absolute;
+      top: -9px;
+      left: 30px;
+    }
+
+    h3{
+      color: var(--yellow);
+      font-weight: 600;
+      text-transform: uppercase;
+
+      margin-bottom: 17px;
+    }
+  }
+}

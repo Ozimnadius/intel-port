@@ -1,0 +1,21 @@
+.networks-advs {
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__cols{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+  }
+
+  &__col{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    p{
+      @include typo-paragraph-3;
+    }
+  }
+}

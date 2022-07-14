@@ -6,7 +6,9 @@
 
     .feed__container{
       background-image: var(--gradient-go);
-      border: none;
+      border-bottom: 1px solid var(--divider-grid);
+      border-left: 1px solid var(--divider-grid);
+      border-right: 1px solid var(--divider-grid);
     }
   }
 

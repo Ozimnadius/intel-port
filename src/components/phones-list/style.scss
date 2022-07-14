@@ -1,0 +1,28 @@
+.phones-list{
+
+  &__title{
+    margin-bottom: 25px;
+  }
+
+  &__ul{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px 100px;
+    max-width: 1280px;
+  }
+
+  &__li{
+    padding-left: 35px;
+    position: relative;
+    @include typo-paragraph-3;
+
+    &:before{
+      content: '';
+      display: block;
+      @include point;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+  }
+}

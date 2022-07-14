@@ -1,0 +1,40 @@
+.cctv-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+
+  &__item {
+    background: var(--bg);
+    padding: 60px 30px 90px 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h3{
+      color: var(--yellow);
+      font-size: 20px;
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      max-width: 325px;
+
+      li{
+        position: relative;
+        line-height: 132%;
+        padding-left: 35px;
+
+        &:before{
+          content: '';
+          display: block;
+          @include point;
+          position: absolute;
+          top: 8px;
+          left: 0;
+        }
+      }
+    }
+  }
+}

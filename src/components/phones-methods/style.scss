@@ -1,0 +1,45 @@
+.phones-methods{
+
+  &__container{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--gradient-grid);
+    }
+  }
+
+  &__title{
+    margin-bottom: 45px;
+  }
+
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px 90px;
+    max-width: 750px;
+  }
+
+  &__item{
+    padding-left: 30px;
+    position: relative;
+    @include typo-paragraph-3;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 0;
+      @include point;
+    }
+  }
+}

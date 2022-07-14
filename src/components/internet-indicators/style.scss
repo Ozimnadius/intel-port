@@ -1,89 +1,31 @@
 .internet-indicators {
-
-  &__gradient-horizontal {
-    background: linear-gradient(45deg, #40398c 24.82%, #9e434f 41.8%, #d39117 53.38%, #9d4350 63.87%, #463a88 77.79%);
-    background-size: 200% 100%;
-    animation: gradient-animation 30s ease infinite;
-
-    display: grid;
-    gap: 1px;
-    padding: 1px;
-    background-clip: padding-box;
-  }
-
-  &__top {
-    background: var(--bg);
-    position: relative;
-    padding: 60px;
-    @include point-bottom-left;
-    @include point-bottom-right;
-  }
-
-  &__title {
-    color: var(--yellow);
-    @include typo-title-2;
-    text-align: center;
-  }
-
-  &__bottom {
-    position: relative;
-    @include point-bottom-left;
-    @include point-bottom-right;
-  }
-
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1px;
-  }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
 
   &__item {
-    background: var(--bg);
     position: relative;
 
-
-
-    &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+    &:nth-child(1){
+      @include point-bottom-left;
+    }
+    &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4),&:nth-child(5) {
       @include point-bottom-right;
     }
 
-    &:nth-child(5) {
-      @include point-top-right;
-
-      &:after {
-        right: initial;
-        left: calc(0px - var(--point-size) / 2 - 0.5px);
-      }
-    }
-
-
   }
-
 
 }
 
 .internet-indicator{
-  position: relative;
+  background: var(--bg);
   text-align: center;
-
-  &:before {
-    content: '';
-    display: block;
-    padding-top: calc(310 / 297 * 100%);
-  }
-
-  &__content{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 40px 25px 60px;
 
   &__txt{
     @include typo-text;
@@ -92,7 +34,7 @@
   &__top{
     display: flex;
     align-items: center;
-    min-height: 46px;
+    min-height: 66px;
   }
 
   &__nums{
@@ -118,17 +60,5 @@
     min-height: 40px;
     display: flex;
     align-items: center;
-  }
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
   }
 }
