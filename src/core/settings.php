@@ -5,6 +5,10 @@ $GLOBALS['emails'] = array(
     "quality" => "quality@intel-port.ru",
     "support" => "support@intel-port.ru"
 );
+$GLOBALS["tel"] = array(
+    "href"=>"tel:tel:+7(812)383-33-33",
+    "value"=>"+7 (812) 383-33-33"
+);
 $GLOBALS["addrs"] = array(
     "moscow" => "125124, г. Москва, Вн. Тер. г. Муниципальный округ Беговой,  ул. 3-я Ямского поля, дом 28, помещ. XII/77",
     "petersburg" => "125124, г. Москва, Вн. Тер. г. Муниципальный округ Беговой,  ул. 3-я Ямского поля, дом 28, помещ. XII/77",
@@ -17,40 +21,50 @@ $GLOBALS['nav'] = array(
         "subnav" => array(
             array(
                 "title" => "Интернет",
-                "url" => "internet"
+                "url" => "internet",
+                "img"=>"/images/content/banner/services/internet.svg"
             ),
             array(
                 "title" => "Организация каналов VPN",
-                "url" => "vpn"
+                "url" => "vpn",
+                "img"=>"/images/content/banner/services/vpn.svg"
             ),
             array(
                 "title" => "Телефония ",
-                "url" => "phones"
+                "url" => "phones",
+                "img"=>"/images/content/banner/services/phones.svg"
             ),
             array(
                 "title" => "Проектирование и строительство сетей",
-                "url" => "networks"
+                "url" => "networks",
+                "img"=>"/images/content/banner/services/networks.svg"
             ),
             array(
                 "title" => "Защита от DDoS-атак",
-                "url" => "protect"
+                "url" => "protect",
+                "img"=>"/images/content/banner/services/protect.svg"
             ),
             array(
                 "title" => "Платформа виртуализации VMware",
-                "url" => "vmware"
+                "url" => "vmware",
+                "img"=>"/images/content/banner/services/vmware.svg"
             ),
             array(
                 "title" => "Colocation",
-                "url" => "colocation"
+                "url" => "colocation",
+                "img"=>"/images/content/banner/services/colocation.svg"
             ),
             array(
                 "title" => "Видеонаблюдение",
-                "url" => "cctv"
+                "url" => "cctv",
+                "img"=>"/images/content/banner/services/cctv.svg"
             ),
             array(
                 "title" => "Сервисная поддержка",
-                "url" => "support"
-            )
+                "url" => "support",
+                "img"=>"/images/content/banner/services/support.svg"
+            ),
+
         )
     ),
     array(
@@ -59,23 +73,28 @@ $GLOBALS['nav'] = array(
         "subnav" => array(
             array(
                 "title" => " Операторам и интеграторам",
-                "url" => "operators-and-integrators"
+                "url" => "operators-and-integrators",
+                "img"=>"/images/content/banner/solutions/oai.svg"
             ),
             array(
                 "title" => " Комплекс услуг для девелоперов",
-                "url" => "complex"
+                "url" => "complex",
+                "img"=>"/images/content/banner/solutions/complex.svg"
             ),
             array(
                 "title" => "  Разветвленная сеть офисов",
-                "url" => "offices"
+                "url" => "offices",
+                "img"=>"/images/content/banner/solutions/offices.svg"
             ),
             array(
                 "title" => "  Индивидуальные решения",
-                "url" => "individual"
+                "url" => "individual",
+                "img"=>"/images/content/banner/solutions/individual.svg"
             ),
             array(
                 "title" => "  Проекты под ключ",
-                "url" => "turnkey"
+                "url" => "turnkey",
+                "img"=>"/images/content/banner/solutions/turnkey.svg"
             )
         )
     ),

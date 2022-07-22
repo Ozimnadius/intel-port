@@ -4,10 +4,8 @@
 <div class="page">
     <div class="page__banner">
         <? component("banner", array(
-            "picture" => array(
-                "desctop" => "/images/content/banner/index.png",
-                "mobile" => "/images/content/banner/index-mobile.png"
-            ),
+            "class" => "banner--main",
+            "picture" => "/images/content/banner/index.svg",
             "titleBig" => "Незримое звено <br> успешного бизнеса",
             "content" => "<p>Оператор связи для крупного и среднего <br> бизнеса Москвы и Санкт-Петербурга.</p><p>Мы делаем обмен информацией надежным <br> и удобным.</p>"
         )) ?>
@@ -22,7 +20,7 @@
         <? component("feed", array(
             "titleSmall" => "Заявка на подключение",
             "fields" => array("name", "tel", "select"),
-            "btnName"=>"Подключить"
+            "btnName" => "Подключить"
         )); ?>
     </div>
     <div class="page__section border-bottom">
@@ -37,9 +35,9 @@
     <div class="page__section">
         <? component("feed", array(
             "title" => "Бесплатный консалтинг <br> вашей действующей связи.",
-            "text"=>"Повышаем эффективность, сокращаем расходы. <br> Проверьте актуальность ваших тарифов на услуги связи.",
+            "text" => "Повышаем эффективность, сокращаем расходы. <br> Проверьте актуальность ваших тарифов на услуги связи.",
             "fields" => array("name", "tel", "email"),
-            "btnName"=>"Проверить"
+            "btnName" => "Проверить"
         )); ?>
     </div>
     <div class="page__section border-bottom border-top">

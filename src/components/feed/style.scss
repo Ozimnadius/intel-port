@@ -12,6 +12,24 @@
     }
   }
 
+  &--inner2{
+    background: none;
+
+    .container{
+      position: relative;
+      @include point-top-left;
+      @include point-top-right;
+    }
+
+    .feed__container{
+      background-image: var(--gradient-go);
+      border-left: 1px solid var(--divider-grid);
+      border-right: 1px solid var(--divider-grid);
+      @include point-bottom-left;
+      @include point-bottom-right;
+    }
+  }
+
   &__container{
     border-color: transparent;
     padding-top: 65px;

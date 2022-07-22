@@ -26,6 +26,12 @@
     text-align: center;
   }
 
+  &__txt{
+    @include typo-text;
+    margin-top: 15px;
+    text-align: center;
+  }
+
   &__bottom {
     position: relative;
     @include point-bottom-left;

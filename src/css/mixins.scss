@@ -16,14 +16,26 @@
 
 @mixin content() {
   --margin: 20px;
+  --margin-top: var(--margin);
+  --margin-bottom: var(--margin);
   font-size: 20px;
 
   ul {
-    margin: var(--margin) 0;
-    padding-left: 30px;
+    margin: var(--margin-top) 0 var(--margin-bottom) 0;
+    padding-left: 0;
 
     li {
-      list-style: disc;
+      position: relative;
+      padding-left: 30px;
+
+      &:before {
+        content: '';
+        display: block;
+        @include point;
+        position: absolute;
+        left: 0;
+        top: 7px;
+      }
     }
   }
 
@@ -40,6 +52,7 @@
   }
 
   h4 {
+    @include typo-heading-4;
     font-size: 1.4em;
   }
 
@@ -52,21 +65,25 @@
     font-weight: 400;
   }
 
-  p {
-    margin: var(--margin) 0;
+  h1, h2, h3, h4, h5, h6, p {
+    margin: var(--margin-top) 0 var(--margin-bottom) 0;
   }
 
-  a{
+  a {
     color: var(--yellow);
 
-    &:hover{
+    &:hover {
       color: var(--orange-red);
       text-decoration: underline;
     }
   }
 
-  >*:last-child{
-    margin-bottom: 0;
+  > *:first-child {
+    --margin-top: 0;
+  }
+
+  > *:last-child {
+    --margin-bottom: 0;
   }
 }
 
@@ -192,7 +209,7 @@
   font-size: 28px;
 }
 
-@mixin point ($color: var(--squares)){
+@mixin point($color: var(--squares)) {
   width: var(--point-size);
   height: var(--point-size);
   //border-radius: 50%;

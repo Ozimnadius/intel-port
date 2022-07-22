@@ -19,6 +19,10 @@
     font-weight: 600;
     padding: 30px 27px;
     display: block;
+
+    &.active{
+      color: var(--yellow);
+    }
   }
 
   &__drop {

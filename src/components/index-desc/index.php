@@ -12,7 +12,7 @@
 );
 extract(array_merge($default, $vars));
 ?>
-<div class="index-desc">
+<div class="index-desc <?=$class ?>">
     <? foreach ($list as $i): ?>
         <div class="index-desc__row">
             <div class="container">

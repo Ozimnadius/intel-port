@@ -4,10 +4,7 @@
 <div class="page">
     <div class="page__banner">
         <? component("banner", array(
-            "picture" => array(
-                "desctop" => "/images/content/banner/colocation.png",
-                "mobile" => "/images/content/banner/colocation-mobile.png"
-            ),
+            "picture" => "/images/content/banner/services/colocation.svg",
             "bread" => array(
                 array(
                     "name" => "Услуги",

@@ -6,4 +6,5 @@
 // @prepros-append components/partners/script.js
 // @prepros-append components/about-history/script.js
 // @prepros-append components/brands/script.js
+// @prepros-append components/oai-algos/script.js
 

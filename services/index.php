@@ -3,21 +3,16 @@
 <!-- main -->
 <div class="page">
     <div class="page__banner">
-        <div class="page__banner">
-            <? component("banner", array(
-                "picture" => array(
-                    "desctop" => "/images/content/banner/services.png",
-                    "mobile" => "/images/content/banner/services-mobile.png"
+        <? component("banner", array(
+            "picture" => "/images/content/banner/services/index.svg",
+            "bread" => array(
+                array(
+                    "name" => "Услуги",
                 ),
-                "bread" => array(
-                    array(
-                        "name" => "Услуги",
-                    ),
-                ),
-                "title" => "Услуги компании <br> Интелпорт",
-                "content" => "<p>У нас работают лучшие специалисты, <br> которых не пугают большие объемы, <br> сжатые сроки и сложные задачи. </p>"
-            )) ?>
-        </div>
+            ),
+            "title" => "Услуги компании <br> Интелпорт",
+            "content" => "<p>У нас работают лучшие специалисты, <br> которых не пугают большие объемы, <br> сжатые сроки и сложные задачи. </p>"
+        )) ?>
     </div>
     <div class="page__section">
         <? component("index-desc", array(
@@ -45,9 +40,9 @@
     <div class="page__section">
         <? component("feed", array(
             "title" => "Бесплатный консалтинг <br> вашей действующей связи.",
-            "text"=>"Повышаем эффективность, сокращаем расходы. <br> Проверьте актуальность ваших тарифов на услуги связи.",
+            "text" => "Повышаем эффективность, сокращаем расходы. <br> Проверьте актуальность ваших тарифов на услуги связи.",
             "fields" => array("name", "tel", "email"),
-            "btnName"=>"Проверить"
+            "btnName" => "Проверить"
         )); ?>
     </div>
     <div class="page__section border-bottom border-top">
@@ -59,8 +54,6 @@
     <div class="page__section">
         <? component('index-contacts') ?>
     </div>
-
-
 </div>
 <!-- END main -->
 

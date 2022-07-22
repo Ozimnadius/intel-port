@@ -1,0 +1,43 @@
+.oai-regulators{
+  background: url("/images/content/oai/regulators/bg.svg") 0 0 no-repeat;
+  background-size: 100% auto;
+
+  &__container{
+    padding-top: calc(390/1490*100%);
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 948px;
+      height: 948px;
+      border-radius: 50%;
+      opacity: .2;
+      background: var(--accident-2);
+      filter: blur(700px);
+      position: absolute;
+      z-index: -1;
+      bottom: 130px;
+      right: 0;
+    }
+  }
+
+  &__title{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  &__txt{
+    @include typo-text;
+    margin-bottom: 55px;
+  }
+
+  &__list{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 35px 20px;
+    align-items: center;
+  }
+
+}

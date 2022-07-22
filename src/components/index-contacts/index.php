@@ -37,8 +37,8 @@
                             </svg>
                             <span>Санкт - Петербург</span>
                         </div>
-                        <a href="tel:+7(499)303-33-33" class="index-contact__tel">
-                            +7 (499) 303-33-33
+                        <a href="<?=$GLOBALS["tel"]["href"] ?>" class="index-contact__tel">
+                            <?=$GLOBALS["tel"]["value"] ?>
                         </a>
                         <div class="index-contact__addr">
                             <?= $GLOBALS["addrs"]["petersburg"] ?>

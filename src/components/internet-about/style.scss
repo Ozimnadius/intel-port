@@ -1,9 +1,27 @@
 .internet-about {
 
+  &--border-bottom-inner-gradient{
+    .internet-about__grid{
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: var(--gradient-grid);
+      }
+
+    }
+  }
+
   &__container {
     padding-top: 110px;
     padding-bottom: 110px;
     @include point-bottom-left;
+    @include point-bottom-right;
+
   }
 
   &__grid {
@@ -43,6 +61,11 @@
       margin-bottom: 40px;
     }
 
+    h6{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
     ul {
       display: grid;
       gap: 25px;
@@ -72,6 +95,7 @@
 
     p{
       @include typo-text;
+      margin-bottom: 25px;
     }
   }
 }

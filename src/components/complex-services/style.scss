@@ -1,0 +1,29 @@
+.complex-services{
+
+  &__container{
+    padding-top: 100px;
+    padding-bottom: 130px;
+    @include point-bottom-left;
+    @include point-bottom-right;
+  }
+
+  &__title{
+    margin-bottom: 60px;
+  }
+
+  &__content{
+    @include content;
+    columns: 2;
+    gap: 100px;
+
+    h4{
+      --margin-top: 60px;
+    }
+
+    p{
+      color: var(--txt-dark);
+      line-height: 132%;
+    }
+  }
+
+}

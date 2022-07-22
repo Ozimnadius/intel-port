@@ -4,10 +4,7 @@
 <div class="page">
     <div class="page__banner">
         <? component("banner", array(
-            "picture" => array(
-                "desctop" => "/images/content/banner/vmware.png",
-                "mobile" => "/images/content/banner/vmware-mobile.png"
-            ),
+            "picture" => "/images/content/banner/services/vmware.svg",
             "bread" => array(
                 array(
                     "name" => "Услуги",

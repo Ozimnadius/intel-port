@@ -1,0 +1,19 @@
+.turnkey-grid{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1px;
+
+  &__item{
+    background: var(--bg);
+    padding: 55px 65px;
+    line-height: 132%;
+
+    h3{
+      font-size: 20px;
+      color: var(--yellow);
+      margin-bottom: 35px;
+    }
+  }
+
+
+}

@@ -1,0 +1,53 @@
+.oai-grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:1px;
+
+  &__item{
+    @extend .internet-indicators__item;
+    background: var(--bg);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    &:nth-child(1){
+      &:before{
+        display: none;
+      }
+    }
+
+    &:nth-child(4),&:nth-child(5){
+      &:after{
+        display: none;
+      }
+    }
+
+    h3{
+      @include typo-paragraph-3;
+      color: var(--yellow);
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      li{
+        position: relative;
+        padding-left: 35px;
+
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 6px;
+          left: 0;
+          @include point;
+
+        }
+      }
+    }
+  }
+
+}

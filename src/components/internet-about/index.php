@@ -1,4 +1,4 @@
-<div class="internet-about">
+<div class="internet-about <?=$class ?>">
     <div class="container">
         <div class="container-inner internet-about__container">
             <div class="internet-about__grid">

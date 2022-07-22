@@ -11,6 +11,7 @@
     left: -265px;
     width: 950px;
     height: 950px;
+    border-radius: 50%;
 
     background: var(--accident-2);
     opacity: 0.3;
@@ -22,24 +23,6 @@
     border-bottom: 1px solid var(--divider-grid);
     position: relative;
     z-index: 1;
-
-    &:nth-child(1) {
-      .index-desc {
-        &__left{
-          //&:before{
-          //  content: '';
-          //  display: block;
-          //  height: 1px;
-          //  width: 971px;
-          //  background: var(--gradient-grid);
-          //  position: absolute;
-          //  z-index: 1;
-          //  right: -190px;
-          //  bottom: -1px;
-          //}
-        }
-      }
-    }
 
     &:nth-child(2) {
       .index-desc {

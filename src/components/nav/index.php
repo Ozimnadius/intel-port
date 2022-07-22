@@ -1,7 +1,7 @@
 <div class="nav">
     <? foreach ($GLOBALS["nav"] as $i): ?>
     <div class="nav__item">
-        <a href="/<?=$i["url"]?>/" class="nav__link"><?=$i["title"]?></a>
+        <a href="/<?=$i["url"]?>/" class="nav__link <?=(in_array($i["url"],explode('/',$_SERVER["REQUEST_URI"])))?"active":""; ?>"><?=$i["title"]?></a>
         <? if ($i["subnav"]): ?>
             <div class="nav__drop">
                 <div class="subnav">

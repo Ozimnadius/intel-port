@@ -19,6 +19,7 @@
   &__btns{
     display:grid;
     justify-content: flex-end;
+    min-height: 100%;
   }
 
   &__btn{
@@ -61,6 +62,47 @@
 
   &__img{
     margin-bottom: 50px;
+    position: relative;
+    width: 480px;
+
+    &:before{
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+    &:after{
+      content: '';
+      display: block;
+      width: 595px;
+      height: 595px;
+      border-radius: 50%;
+      background: var(--accident-2);
+      opacity: .4;
+      filter: blur(700px);
+      position: absolute;
+      z-index: 2;
+      top: -60px;
+      left: -75px;
+    }
+  }
+
+  &__img-wrap{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 
   &__title{

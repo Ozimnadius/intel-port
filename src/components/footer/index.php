@@ -9,8 +9,8 @@
                     <div class="footer__city">
                         <? component("select-city") ?>
                     </div>
-                    <a href="tel:+7(499)303-33-33" class="footer__tel">
-                        +7 (499) 303-33-33
+                    <a href="<?=$GLOBALS["tel"]["href"] ?>" class="footer__tel">
+                        <?=$GLOBALS["tel"]["value"] ?>
                     </a>
                     <div class="footer__addr">
                         <?= $GLOBALS["addrs"]["moscow"] ?>

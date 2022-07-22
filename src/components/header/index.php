@@ -21,15 +21,16 @@
             </div>
 
             <div class="header__tel">
-                <a href="tel:+7(812)383-33-33">
-                    +7 (812) 383-33-33
+                <a href="<?=$GLOBALS["tel"]["href"] ?>">
+                    <?=$GLOBALS["tel"]["value"] ?>
                 </a>
             </div>
 
             <div class="header__support">
                 <? component("btn", [
                     "class" => "btn-stroke",
-                    "text" => "Техподдержка 24/7"
+                    "text" => "Техподдержка 24/7",
+                    "href"=>"/support/index.php"
                 ]) ?>
             </div>
 

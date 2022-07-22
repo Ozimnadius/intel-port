@@ -1,0 +1,33 @@
+.turnkey-desc{
+  background: url("/images/content/turnkey/desc/bg.svg") 0 center no-repeat;
+  background-size: 100% auto;
+
+  &__container{
+    --container-inner-padding: 0 100px;
+    @include point-bottom-left;
+    @include point-bottom-right;
+    padding-top: 90px;
+    padding-bottom: 145px;
+  }
+
+  &__grid{
+    padding-top: calc(390/1490*100%);
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+  }
+
+  &__item{
+    font-size: 16px;
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      li{
+        color: var(--txt-dark);
+      }
+    }
+  }
+}
