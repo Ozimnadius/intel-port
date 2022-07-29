@@ -1,0 +1,59 @@
+.contacts-addrs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+
+  &__item {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &:first-child {
+      border-right: 1px dashed var(--divider-grid);
+      padding-right: 80px;
+    }
+
+    &:last-child {
+      padding-left: 80px;
+    }
+  }
+}
+
+.contacts-addr {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 50px;
+  align-items: center;
+
+  &__city {
+    @include typo-paragraph-2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+
+    svg {
+      display: block;
+
+      path {
+        stroke: var(--yellow);
+      }
+    }
+  }
+
+  &__tel {
+    a {
+      @include typo-heading-4;
+      margin-bottom: 9px;
+    }
+
+    p {
+      @include typo-text;
+      color: var(--logo-grey);
+    }
+  }
+
+  &__content{
+    @include typo-text;
+    margin-bottom: 12px;
+  }
+}

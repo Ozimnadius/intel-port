@@ -1,0 +1,12 @@
+.policy{
+  border-bottom: 1px solid var(--divider-grid);
+  border-image: var(--gradient-grid) 1;
+  margin-bottom: 5px;
+
+  &__container{
+    padding-top: 65px;
+    padding-bottom: 160px;
+    @include point-bottom-right;
+    @include point-bottom-left;
+  }
+}

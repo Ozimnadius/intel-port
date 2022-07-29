@@ -1,0 +1,61 @@
+.contacts{
+  border-bottom: 1px solid var(--divider-grid);
+  border-image: var(--gradient-grid) 1;
+  margin-bottom: 10px;
+
+
+  &__container{
+    background: var(--bg);
+    margin-top: -197px;
+    border-top: 1px solid var(--divider-grid);
+    @include point-top-left;
+    @include point-top-right;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  &__title{
+    @include typo-heading-2;
+    margin-bottom: 55px;
+  }
+
+  &__list{
+    width: 50%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 45px;
+  }
+
+  &__email{
+    @include typo-text;
+    a{
+      color: var(--yellow);
+      @include tr;
+
+      &:hover{
+        color: var(--orange-red);
+      }
+    }
+  }
+
+  &__tel{
+    @include typo-text;
+    a{
+      @include typo-title-3;
+      color: var(--yellow);
+    }
+  }
+
+  &__addrs{
+    margin-bottom: 60px;
+  }
+
+  &__feed{
+    margin-right: -65px;
+    border-top: 1px dashed var(--divider-grid);
+    border-bottom: 1px dashed var(--divider-grid);
+    margin-bottom: 90px;
+    @include point-bottom-left;
+    @include point-bottom-right;
+  }
+}

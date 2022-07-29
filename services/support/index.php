@@ -51,12 +51,9 @@
         </div>
     </div>
     <div class="page__section">
-        <? ob_start() ?>
-        <? component("support-content") ?>
-        <? $content = ob_get_clean() ?>
         <? component("gradient", array(
             "title" => "В рамках сервисной поддержки мы оказываем услуги:",
-            "content" => $content
+            "content" => content("support-content")
         )) ?>
     </div>
     <div class="page__section">

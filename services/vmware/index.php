@@ -60,14 +60,10 @@
         </div>
     </div>
     <div class="page__section">
-        <? ob_start() ?>
-        <? component("vmware-content") ?>
-        <? $content = ob_get_clean() ?>
         <? component("gradient", array(
             "title" => "Услуги",
-            "content" => $content
+            "content" => content("vmware-content")
         )) ?>
-
     </div>
     <div class="page__section">
         <? component("feed", array(

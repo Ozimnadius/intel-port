@@ -1,0 +1,43 @@
+.contacts-props{
+  padding-right: 150px;
+
+  &__top{
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--orange-red);
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 500;
+    @include tr;
+
+    &:hover{
+      color: var(--main-orange);
+    }
+
+    svg{
+      path{
+        stroke: currentColor;
+      }
+    }
+  }
+}
+
+.contacts-prop{
+  display:grid;
+  grid-template-columns: repeat(2,50%);
+  border-bottom: 1px dashed var(--divider-grid);
+  padding: 17px 0;
+  @include typo-text;
+
+  &__left{
+    color: var(--txt-dark);
+  }
+}

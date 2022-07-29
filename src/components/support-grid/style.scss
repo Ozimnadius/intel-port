@@ -1,3 +1,47 @@
 .support-grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1px;
+
+
+  &__col{
+    background: var(--bg);
+    padding: 50px;
+    position: relative;
+    @include point-top-right;
+    @include point-bottom-left;
+
+  }
+
+  &__title{
+    @include typo-paragraph-2;
+    color: var(--yellow);
+    min-height: 2.6em;
+    margin-bottom: 45px;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  &__item{
+    --margin: 8px;
+    p{
+      @include typo-text;
+      color: var(--txt-dark);
+
+    }
+
+    b{
+      font-size: 1.125em;
+      color: var(--txt);
+      i{
+        font-style: italic;
+      }
+    }
+  }
+
 
 }

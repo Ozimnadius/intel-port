@@ -1,4 +1,4 @@
-<? require("../src/core/top.php"); ?>
+<? require("../../src/core/top.php"); ?>
 
 <!-- main -->
 <div class="page">
@@ -29,7 +29,7 @@
             "content" => $content
         )) ?>
     </div>
-    <div class="page__section border-bottom">
+    <div class="page__section">
         <? ob_start() ?>
         <? component("support-grid") ?>
         <? $content = ob_get_clean(); ?>
@@ -38,11 +38,30 @@
             "content" => $content
         )) ?>
     </div>
+    <div class="page__section border-bottom">
+        <? component("index-lics") ?>
+    </div>
+    <div class="page__section border-bottom">
+        <? component("recs") ?>
+    </div>
+    <div class="page__section border-bottom">
+        <? component("advantages") ?>
+    </div>
+    <div class="page__section border-bottom">
+        <? component("feed", array(
+            "title" => "Бесплатный консалтинг <br> вашей действующей связи.",
+            "text" => "Повышаем эффективность, сокращаем расходы. <br> Проверьте актуальность ваших тарифов на услуги связи.",
+            "fields" => array("name", "tel", "email"),
+            "btnName" => "Проверить"
+        )); ?>
+    </div>
+    <div class="page__section border-bottom">
+        <? component("partners") ?>
+    </div>
+    <div class="page__section">
+        <? component('index-contacts') ?>
+    </div>
 </div>
 <!-- END main -->
 
-
-
-
-
-<? require("../src/core/bottom.php"); ?>
+<? require("../../src/core/bottom.php"); ?>

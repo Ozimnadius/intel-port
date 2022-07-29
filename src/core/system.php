@@ -1,11 +1,11 @@
 <?php
 
-function template(string $path, array $vars = []): string
+function content(string $name, array $vars = []): string
 {
-    $systemTemplateRenererIntoFullPath = "views/$path.php";
+    $fullPath = $GLOBALS['path']."/src/components/$name/index.php";
     extract($vars);
     ob_start();
-    include($systemTemplateRenererIntoFullPath);
+    include($fullPath);
     return ob_get_clean();
 }
 

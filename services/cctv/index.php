@@ -43,12 +43,9 @@
         </div>
     </div>
     <div class="page__section">
-        <? ob_start() ?>
-        <?component("cctv-content")?>
-        <? $content = ob_get_clean() ?>
         <? component("gradient", array(
             "title" => "Спектр услуг",
-            "content" => $content
+            "content" => content("cctv-content")
         )) ?>
     </div>
     <div class="page__section">

@@ -1,0 +1,41 @@
+.error{
+  border-bottom: 1px solid var(--divider-grid);
+  border-image: var(--gradient-grid) 1;
+  background-image: url(/images/content/banner/bg.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5px;
+
+  &__container{
+    padding-top: 175px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include point-bottom-left;
+    @include point-bottom-right;
+  }
+
+  &__bread{
+    align-self: flex-start;
+  }
+
+  &__img{
+    margin-bottom: -50px;
+  }
+
+  &__title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  &__txt{
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,130 @@
+.slider {
+  --offset-img: 0px;
+  --offset-map: 0px;
+  --tr: 0ms;
+
+  &__wrap {
+    border-left: 1px solid var(--divider-grid);
+    padding-left: 50px;
+    margin-right: -120px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__map {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 570px;
+    transform: translateY(-50%) translateX(var(--offset-map));
+    transition-timing-function: ease-out;
+    transition-duration: var(--tr);
+  }
+
+  &__imgs {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 540px;
+    transform: translateX(var(--offset-img));
+    transition-timing-function: ease-out;
+    transition-duration: var(--tr);
+  }
+
+  &__swiper {
+    z-index: 3;
+    margin-left: -50px;
+    padding-left: 50px;
+  }
+
+  &__slide {
+    height: auto;
+    width: 475px;
+
+    &--big {
+      width: 620px;
+    }
+  }
+
+}
+
+.slide-big {
+
+  &__sub {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 132%;
+  }
+
+  &__title {
+    font-size: 297px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1;
+    @include gradient-txt(var(--gradient-btn));
+  }
+
+  &__txt {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+.slide {
+  display: grid;
+  grid-template-rows: repeat(2, 50%);
+  box-sizing: border-box;
+
+  &--2 {
+
+    .slide {
+      &__item {
+        padding-top: 60px;
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 1px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    background: var(--divider-grid);
+  }
+
+  &__item {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    position: relative;
+    height: 410px;
+    padding-right: 40px;
+
+  }
+
+  &__title {
+    font-size: 80px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 5px;
+    line-height: 112%;
+    @include gradient-txt(var(--gradient-btn));
+
+    &--big {
+      font-size: 124px;
+    }
+
+  }
+
+  &__sub {
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 114%;
+  }
+}

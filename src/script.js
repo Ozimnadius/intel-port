@@ -4,7 +4,7 @@
 // @prepros-append components/recs/script.js
 // @prepros-append components/index-lics/script.js
 // @prepros-append components/partners/script.js
-// @prepros-append components/about-history/script.js
+// @prepros-append components/slider/script.js
 // @prepros-append components/brands/script.js
 // @prepros-append components/oai-algos/script.js
 

@@ -1,0 +1,11 @@
+.policy-banner{
+  background-position: center bottom;
+
+  &__container{
+    padding-top: 175px;
+    padding-bottom: 65px;
+    @include point-bottom-left;
+    @include point-bottom-right;
+  }
+
+}

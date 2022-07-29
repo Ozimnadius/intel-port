@@ -12,6 +12,13 @@
     }
   }
 
+  &--inner-transparent{
+    background-image: none;
+    .feed__container{
+      padding-left: 15px;
+    }
+  }
+
   &--inner2{
     background: none;
 

@@ -26,13 +26,11 @@
                             <p>Контроль качества:</p>
                             <a href="mailto:<?= $GLOBALS["emails"]["quality"] ?>"><?= $GLOBALS["emails"]["quality"] ?></a>
                         </div>
-
-
-
                     </div>
                     <? component("btn", array(
                         "class" => "btn-border btn-border--orange footer__btn",
-                        "text" => "Техподдержка 24/7"
+                        "text" => "Техподдержка 24/7",
+                        "href"=>"/about/support/"
                     )) ?>
                 </div>
             </div>

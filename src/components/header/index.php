@@ -30,7 +30,7 @@
                 <? component("btn", [
                     "class" => "btn-stroke",
                     "text" => "Техподдержка 24/7",
-                    "href"=>"/support/index.php"
+                    "href"=>"/about/support/"
                 ]) ?>
             </div>
 

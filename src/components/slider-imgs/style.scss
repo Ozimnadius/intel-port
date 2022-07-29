@@ -1,0 +1,11 @@
+.slider-imgs{
+  display: flex;
+
+  &__slide{
+    @extend .slider__slide;
+  }
+
+  &__item{
+    @extend .slide__item;
+  }
+}

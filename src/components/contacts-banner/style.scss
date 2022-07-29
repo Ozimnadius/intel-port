@@ -1,0 +1,60 @@
+.contacts-banner{
+
+  &__container{
+    min-height: 750px;
+    grid-template-columns: 100%;
+    align-items: flex-start;
+    padding-top: 177px;
+
+    &:before{
+      display: none;
+    }
+  }
+
+  &__img{
+    position: absolute;
+    right: 30px;
+    top: 130px;
+  }
+
+  &__wrap{
+    position: relative;
+    z-index: 2;
+  }
+
+  &__contacts{
+    border: 1px solid var(--divider-grid);
+    border-image: var(--gradient-new) 1;
+    background: rgba(5, 13, 30, 0.02);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 55px 85px;
+  }
+
+  &__item{
+    h2{
+      @include typo-heading-3;
+    }
+  }
+
+  &__email{
+    p{
+      font-size: 1.125em;
+      font-weight: 500;
+    }
+    a{
+      font-size: 1.25em;
+      font-weight: 700;
+      color: var(--yellow);
+      @include tr;
+
+      &:hover{
+        color: var(--orange-red);
+      }
+    }
+  }
+}

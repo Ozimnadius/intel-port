@@ -57,12 +57,9 @@
         </div>
     </div>
     <div class="page__section">
-        <? ob_start() ?>
-        <?component("protect-grid")?>
-        <? $content = ob_get_clean() ?>
         <? component("gradient", array(
             "title" => "Базовые возможности",
-            "content" => $content
+            "content" => content("protect-grid")
         )) ?>
     </div>
     <div class="page__section">
