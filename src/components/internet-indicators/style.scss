@@ -2,6 +2,15 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1px;
+  @media (max-width: 1919.98px){
+     grid-template-columns: 205px repeat(3,1fr) 205px;
+  }
+  @media (max-width: 1439.98px){
+     grid-template-columns: 20px repeat(3,1fr) 20px;
+  }
+  @media (max-width: 767.98px){
+     grid-template-columns: repeat(2,1fr);
+  }
 
   &__item {
     position: relative;
@@ -13,6 +22,12 @@
       @include point-bottom-right;
     }
 
+    &:nth-child(1),&:nth-child(5),&:nth-child(6),&:nth-child(10){
+      padding: 0;
+      @media (max-width: 767.98px){
+        display: none;
+      }
+    }
   }
 
 }
@@ -26,9 +41,22 @@
   justify-content: center;
   gap: 7px;
   padding: 40px 25px 60px;
+  @media (max-width: 1919.98px){
+    padding: 40px 10px 60px;
+  }
+  @media (max-width: 1439.98px){
+    gap: 0;
+    padding: 30px 10px;
+  }
+  @media (max-width: 767.98px){
+    padding: 20px 10px;
+  }
 
   &__txt{
     @include typo-text;
+    @media (max-width: 767.98px){
+      font-size: 13px;
+    }
   }
 
   &__top{
@@ -43,7 +71,9 @@
     display: flex;
     align-items: flex-start;
     gap: 6px;
-
+    @media (max-width: 767.98px){
+      font-size: 60px;
+    }
 
     sup{
       font-size: 34px;

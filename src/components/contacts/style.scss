@@ -1,10 +1,9 @@
-.contacts{
+.contacts {
   border-bottom: 1px solid var(--divider-grid);
   border-image: var(--gradient-grid) 1;
   margin-bottom: 10px;
 
-
-  &__container{
+  &__container {
     background: var(--bg);
     margin-top: -197px;
     border-top: 1px solid var(--divider-grid);
@@ -12,50 +11,101 @@
     @include point-top-right;
     padding-top: 65px;
     padding-bottom: 65px;
+    @media (max-width: 1919.98px) {
+      margin-top: 0;
+      padding-bottom: 125px;
+    }
+    @media (max-width: 1439.98px) {
+      padding-top: 85px;
+      padding-bottom: 85px;
+    }
+    @media (max-width: 767.98px) {
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
   }
 
-  &__title{
+  &__title {
     @include typo-heading-2;
     margin-bottom: 55px;
+    @media (max-width: 1439.98px) {
+      font-size: 44px;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
   }
 
-  &__list{
+  &__list {
     width: 50%;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: 283px 1fr;
     margin-bottom: 45px;
+    @media (max-width: 1919.98px) {
+      margin-bottom: 65px;
+      grid-template-columns: 270px 1fr;
+    }
+    @media (max-width: 1439.98px) {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 767.98px) {
+      grid-template-columns: 100%;
+      gap: 15px;
+      margin-bottom: 50px;
+    }
   }
 
-  &__email{
+  &__email {
     @include typo-text;
-    a{
+    @media (max-width: 767.98px) {
+      font-size: 16px;
+    }
+
+    a {
       color: var(--yellow);
       @include tr;
 
-      &:hover{
+      &:hover {
         color: var(--orange-red);
       }
     }
   }
 
-  &__tel{
+  &__tel {
     @include typo-text;
-    a{
+    @media (max-width: 767.98px) {
+      font-size: 16px;
+    }
+
+    a {
       @include typo-title-3;
       color: var(--yellow);
+      @media (max-width: 1439.98px) {
+        font-size: 30px;
+      }
+
     }
   }
 
-  &__addrs{
+  &__addrs {
     margin-bottom: 60px;
   }
 
-  &__feed{
+  &__feed {
     margin-right: -65px;
     border-top: 1px dashed var(--divider-grid);
     border-bottom: 1px dashed var(--divider-grid);
     margin-bottom: 90px;
     @include point-bottom-left;
     @include point-bottom-right;
+    @media (max-width: 1919.98px) {
+      margin-right: 0;
+    }
+    @media (max-width: 767.98px){
+      margin-bottom: 55px;
+    }
   }
 }

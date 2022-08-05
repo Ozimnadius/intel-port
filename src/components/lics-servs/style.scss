@@ -1,6 +1,13 @@
-.lics-servs{
+.lics-servs {
+  @media (max-width: 767.98px) {
+    background-image: url(/images/content/internet/services/bg.png);
+    background-size: 100% auto;
+    background-position: center 30px;
+    background-repeat: no-repeat;
+  }
 
-  &__container{
+
+  &__container {
     padding-top: 155px;
     padding-bottom: 135px;
     padding-right: 20px;
@@ -9,33 +16,84 @@
     background-position: 0 255px;
     background-repeat: no-repeat;
 
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 825px;
     gap: 20px;
+    @media (max-width: 1919.98px) {
+      padding: var(--container-inner-padding);
+      padding-top: 75px;
+      padding-bottom: 125px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 1439.98px) {
+      padding-bottom: 50px;
+      grid-template-columns: 100%;
+      gap: 50px;
+      background-position: center 45px;
+    }
+    @media (max-width: 767.98px) {
+      padding-top: 40px;
+      padding-bottom: 50px;
+      background: none;
+      gap: 40px;
+    }
 
   }
 
-  &__title{
+  &__title {
     margin-bottom: 200px;
-  }
-
-  &__icon{
-    @extend .internet-services__icon;
-    margin-left: 160px;
-
-    &:before,&:after{
-      display: none;
+    @media (max-width: 1439.98px) {
+      text-align: center;
+      margin-bottom: 55px;
+      font-size: 36px;
+      br {
+        display: none;
+      }
+    }
+    @media (max-width: 767.98px) {
+      text-align: left;
+    }
+    @media (max-width: 767.98px) {
+      margin-bottom: 15px;
     }
   }
 
-  &__item{
+  &__icon {
+    @extend .internet-services__icon;
+    margin-left: 160px;
+    @media (max-width: 1919.98px) {
+      margin-left: 170px;
+    }
+    @media (max-width: 1439.98px) {
+      margin: 0 auto;
+    }
+    @media (max-width: 767.98px) {
+      margin-right: auto;
+    }
+
+    &:before, &:after {
+      display: none;
+      @media (max-width: 1439.98px) {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
     border-bottom: 1px dashed var(--divider-grid);
     padding: 30px 0;
     @include typo-paragraph-3;
     color: var(--txt-dark);
+    @media (max-width: 1919.98px) {
+      padding: 20px 0;
+    }
+    @media (max-width: 1439.98px) {
+      padding: 10px 0;
+      font-size: 16px;
+    }
 
 
-    &:first-child{
+    &:first-child {
       border-top: 1px dashed var(--divider-grid);
     }
   }

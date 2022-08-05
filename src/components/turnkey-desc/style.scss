@@ -1,32 +1,71 @@
-.turnkey-desc{
+.turnkey-desc {
   background: url("/images/content/turnkey/desc/bg.svg") 0 center no-repeat;
   background-size: 100% auto;
+  @media (max-width: 1439.98px) {
+    background-size: auto;
+    background-position: center center;
+  }
+  @media (max-width: 767.98px){
+    background-position: center 110px;
+  }
 
-  &__container{
+  &__container {
     --container-inner-padding: 0 100px;
     @include point-bottom-left;
     @include point-bottom-right;
     padding-top: 90px;
     padding-bottom: 145px;
+    @media (max-width: 1919.98px) {
+      --container-inner-padding: 0 75px;
+      padding-bottom: 70px;
+    }
+    @media (max-width: 1439.98px) {
+      --container-inner-padding: 0 0;
+      padding-top: 50px;
+      padding-bottom: 90px;
+    }
+    @media (max-width: 767.98px){
+      padding-bottom: 50px;
+    }
   }
 
-  &__grid{
-    padding-top: calc(390/1490*100%);
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+  &__title {
+    @media (max-width: 1439.98px) {
+      font-size: 36px;
+    }
+  }
+
+  &__grid {
+    padding-top: calc(390 / 1490 * 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 100px;
+    @media (max-width: 1919.98px) {
+      padding-top: 33%;
+    }
+    @media (max-width: 1439.98px) {
+      padding-top: 270px;
+      gap: 20px;
+    }
+    @media (max-width: 767.98px){
+      grid-template-columns: 100%;
+      padding-top: 55px;
+    }
   }
 
-  &__item{
+  &__item {
     font-size: 16px;
 
-    ul{
+    ul {
       display: flex;
       flex-direction: column;
       gap: 20px;
 
-      li{
+      li {
         color: var(--txt-dark);
+        @media (max-width: 1439.98px){
+          font-size: 16px;
+        }
       }
     }
   }

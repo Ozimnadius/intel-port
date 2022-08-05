@@ -18,7 +18,7 @@
                 </div>
                 <div class="internet-support__right">
                     <div class="internet-about__img">
-                        <img src="/images/content/internet/support/img.jpg">
+                        <img src="/images/content/internet/support/img.jpg" alt="lorem">
                     </div>
                 </div>
             </div>

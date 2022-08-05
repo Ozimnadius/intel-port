@@ -1,7 +1,9 @@
 <div class="index-about">
     <div class="container">
         <div class="container-inner index-about__container">
-            <div class="index-about__title title">О компании</div>
+            <div class="index-about__title title">
+                О компании
+            </div>
             <div class="index-about__desc">
                 <svg width="160" height="146" viewBox="0 0 160 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"

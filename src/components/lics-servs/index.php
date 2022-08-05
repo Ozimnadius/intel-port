@@ -28,7 +28,7 @@ extract(array_merge($default, $vars));
                     связи в соответствии:
                 </div>
                 <div class="lics-servs__icon">
-                    <img src="/images/content/internet/services/icon.png">
+                    <img src="/images/content/internet/services/icon.png" alt="lics">
                 </div>
             </div>
             <div class="lics-servs__right">

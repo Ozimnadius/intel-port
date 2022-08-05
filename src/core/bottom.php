@@ -4,5 +4,7 @@
     </div>
 </div>
 
+    <? component("templates") ?>
+    <? component("mmenu") ?>
 </body>
 </html>

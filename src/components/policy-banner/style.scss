@@ -6,6 +6,30 @@
     padding-bottom: 65px;
     @include point-bottom-left;
     @include point-bottom-right;
+    @media (max-width: 1919.98px){
+      padding-top: 140px;
+    }
+    @media (max-width: 1439.98px){
+      padding-top: 120px;
+      padding-bottom: 50px;
+    }
+    @media (max-width: 767.98px){
+      padding-top: 80px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 0;
+    @media (max-width: 1919.98px){
+      margin-top: 70px;
+    }
+    @media (max-width: 1439.98px){
+      font-size: 36px;
+      margin-top: 90px;
+    }
+    @media (max-width: 767.98px){
+      font-size: 24px;
+    }
   }
 
 }

@@ -17,8 +17,10 @@
   &__link {
     font-size: 18px;
     font-weight: 600;
-    padding: 30px 27px;
-    display: block;
+    padding: 10px 27px;
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
 
     &.active{
       color: var(--yellow);

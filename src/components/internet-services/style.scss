@@ -1,6 +1,19 @@
-.internet-services{
+.internet-services {
+  --line-size: 135px;
+  --offset-top: 15px;
+  @media (max-width: 1919.98px) {
+    --line-size: 105px;
+    --offset-top: 0px;
+  }
+  @media (max-width: 1439.98px) {
+    --offset-top: 15px;
+    --line-size: 60px;
+  }
+  @media (max-width: 767.98px){
+      --offset-top: 10px;
+  }
 
-  &__container{
+  &__container {
     padding-top: 65px;
     padding-bottom: 165px;
     @include point-bottom-left;
@@ -9,20 +22,52 @@
     background-image: url(/images/content/internet/services/bg.png);
     background-position: 0 60px;
     background-repeat: no-repeat;
+    @media (max-width: 1919.98px) {
+      padding-top: 90px;
+      padding-bottom: 160px;
+      background-position: 30px 110px;
+    }
+    @media (max-width: 1439.98px) {
+      padding-top: 55px;
+      padding-bottom: 130px;
+      background-position: center 230px;
+    }
+    @media (max-width: 767.98px){
+      background-position: center 360px;
+      padding-bottom: 200px;
+    }
   }
 
-  &__title{
+  &__title {
     color: var(--yellow);
     @include typo-title-2;
+    @media (max-width: 1919.98px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 1439.98px) {
+      font-size: 36px;
+      margin-bottom: 70px;
+    }
+    @media (max-width: 767.98px){
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
   }
 
-  &__wrap{
+  &__wrap {
     display: flex;
     align-items: center;
     padding-left: 195px;
+    @media (max-width: 1439.98px) {
+      padding-left: 0;
+    }
+    @media (max-width: 767.98px){
+       flex-direction: column;
+      gap: 30px;
+    }
   }
 
-  &__icon{
+  &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,51 +78,68 @@
     position: relative;
     flex-shrink: 0;
     margin-right: 210px;
+    @media (max-width: 1439.98px) {
+      margin-right: 80px;
+    }
+    @media (max-width: 767.98px){
+      margin-right: 0;
+    }
 
-    &:before,&:after{
+    &:before, &:after {
       content: '';
       display: block;
       position: absolute;
       top: 50%;
+      @media (max-width: 767.98px){
+        display: none;
+      }
     }
 
-    &:before{
+    &:before {
       z-index: 2;
       @include point(var(--yellow));
       top: 50%;
-      right: calc(0px - var(--point-size)/2);
-      margin-top: calc(0px - var(--point-size)/2);
+      right: calc(0px - var(--point-size) / 2);
+      margin-top: calc(0px - var(--point-size) / 2);
+      @media (max-width: 1439.98px) {
+        display: block;
+      }
     }
 
-    &:after{
+    &:after {
       width: 210px;
       height: 0;
       border-bottom: 1px dashed var(--txt);
       left: 100%;
       margin-top: -.5px;
+      @media (max-width: 1439.98px) {
+        width: 80px;
+      }
     }
-
 
   }
 
-  &__list{
-    display:grid;
-    padding-left: 135px;
+  &__list {
+    display: grid;
+    padding-left: var(--line-size);
     position: relative;
+    @media (max-width: 767.98px){
+      margin-left: -15px;
+    }
 
-    &:before{
+    &:before {
       content: '';
       display: block;
       position: absolute;
-      top: 15px;
-      bottom: -15px;
+      top: var(--offset-top);
+      bottom: calc(0px - var(--offset-top));
       left: 0;
       width: 0;
       border-left: 1px dashed var(--txt);
     }
   }
 
-  &__item{
+  &__item {
     @include typo-text;
     color: var(--txt-dark);
     padding-left: 40px;
@@ -85,32 +147,55 @@
     margin-bottom: 40px;
     max-width: 680px;
 
-    &:before,&:after{
+    @media (max-width: 1919.98px) {
+      padding-left: 25px;
+      margin-bottom: 25px;
+    }
+    @media (max-width: 1439.98px){
+      padding-left: 20px;
+    }
+    @media (max-width: 767.98px){
+      font-size: 16px;
+    }
+
+    &:before, &:after {
       content: '';
       display: block;
       position: absolute;
-      top: 15px;
+      top: var(--offset-top);
     }
 
-    &:before{
+    &:before {
       z-index: 2;
       @include point(var(--yellow));
-      left: calc(0px - var(--point-size)/2);
-      margin-top: calc(0px - var(--point-size)/2);
+      left: calc(0px - var(--point-size) / 2);
+      margin-top: calc(0px - var(--point-size) / 2);
+      @media (max-width: 1439.98px) {
+        display: block;
+      }
     }
 
-    &:after{
-      width: 135px;
+    &:after {
+      width: var(--line-size);
       height: 0;
       border-bottom: 1px dashed var(--txt);
       right: 100%;
       margin-top: -.5px;
     }
 
-    &:last-child{
+    &:last-child {
       position: absolute;
       top: 100%;
-      left: 135px;
+      left: var(--line-size);
+    }
+  }
+
+  &__content {
+    @media (max-width: 1919.98px){
+      transform: translateY(-50%);
+    }
+    @media (max-width: 1439.98px) {
+      transform: none;
     }
   }
 

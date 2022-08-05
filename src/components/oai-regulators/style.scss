@@ -1,10 +1,25 @@
 .oai-regulators{
   background: url("/images/content/oai/regulators/bg.svg") 0 0 no-repeat;
   background-size: 100% auto;
+  @media (max-width: 767.98px){
+    background: none;
+  }
 
   &__container{
     padding-top: calc(390/1490*100%);
     position: relative;
+    padding-bottom: 120px;
+    @media (max-width: 1919.98px){
+      padding-top: 21.5%;
+      padding-bottom: 50px;
+    }
+    @media (max-width: 1439.98px){
+      padding-top: 37.5%;
+      padding-bottom: 60px;
+    }
+    @media (max-width: 767.98px){
+      padding-top: 0;
+    }
 
     &:before{
       content: '';
@@ -26,11 +41,26 @@
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 40px;
+    @media (max-width: 1919.98px){
+      margin-bottom: 30px;
+    }
+    @media (max-width: 1439.98px){
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+    @media (max-width: 767.98px){
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   &__txt{
     @include typo-text;
     margin-bottom: 55px;
+    @media (max-width: 767.98px){
+      font-size: 16px;
+      margin-bottom: 45px;
+    }
   }
 
   &__list{
@@ -38,6 +68,9 @@
     grid-template-columns: repeat(4,1fr);
     gap: 35px 20px;
     align-items: center;
+    @media (max-width: 767.98px){
+       grid-template-columns: repeat(2,1fr);
+    }
   }
 
 }

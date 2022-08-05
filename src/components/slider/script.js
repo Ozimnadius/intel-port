@@ -1,3 +1,4 @@
+/*SLIDER*/
 window.addEventListener('load', function () {
     let slider = document.querySelector('.slider'),
         imgMultiplier = 0.78,
@@ -20,6 +21,13 @@ window.addEventListener('load', function () {
                 }
             },
         });
+
+        if(window.matchMedia('(max-width: 1919.98px)').matches){
+            let wrap = document.querySelector('.slider__wrap'),
+                marginRight = (window.innerWidth - wrap.offsetWidth)/2;
+
+            wrap.style.setProperty('--margin-right',`-${marginRight}px`);
+        }
     }
 
 

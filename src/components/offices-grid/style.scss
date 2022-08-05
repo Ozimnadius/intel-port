@@ -1,26 +1,49 @@
 .offices-grid{
   display:grid;
   gap: 1px;
+  @media (max-width: 767.98px){
+     gap: 0;
+  }
 
   &__items{
     display:grid;
-
     grid-template-columns: repeat(2,1fr);
     gap: 1px;
+    @media (max-width: 767.98px){
+       grid-template-columns: 100%;
+      gap: 25px;
+      background: var(--bg);
+      padding: 0 10px 75px;
+    }
   }
 
   &__item{
     background: var(--bg);
     padding: 85px 150px 75px;
+    @media (max-width: 1919.98px){
+      padding: 75px 50px;
+    }
+    @media (max-width: 1439.98px){
+      padding: 50px;
+    }
+    @media (max-width: 767.98px){
+      padding: 0;
+    }
 
     h3{
       --margin-bottom: 25px;
       @include typo-paragraph-3;
       color: var(--yellow);
+      @media (max-width: 1439.98px){
+        font-size: 20px;
+      }
     }
 
     p{
       @include typo-text;
+      @media (max-width: 767.98px){
+        font-size: 16px;
+      }
     }
 
   }

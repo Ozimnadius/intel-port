@@ -1,3 +1,8 @@
+<? $default = array(
+    "title" => "Качественные показатели сети"
+);
+extract(array_merge($default, $vars));
+?>
 <? ob_start() ?>
     <div class="internet-indicators">
         <? foreach ($list as $i): ?>
@@ -24,7 +29,7 @@
     </div>
 <? $content = ob_get_clean() ?>
 <? component("gradient", array(
-    "title" => "Качественные показатели сети",
+    "title" => $title,
     "content" => $content,
     "bottom" => $bottom
 )) ?>

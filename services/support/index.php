@@ -25,7 +25,7 @@
                     <div class="internet-about__grid internet-about__grid--center">
                         <div class="internet-about__left">
                             <div class="internet-about__img">
-                                <img src="/images/content/internet/about/support.jpg">
+                                <img src="/images/content/internet/about/support.jpg" alt="lorem">
                             </div>
                         </div>
                         <div class="internet-about__right">

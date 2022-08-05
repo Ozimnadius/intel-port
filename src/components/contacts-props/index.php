@@ -78,7 +78,10 @@ extract(array_merge($default, $vars));
             <div class="contacts-props__title title">РЕКВИЗИТЫ</div>
         </div>
         <div class="contacts-props__right">
-            <button type="button" class="contacts-props__btn">
+            <button type="button"
+                    class="contacts-props__btn"
+            data-event="copy"
+            data-target=".contacts-props__list">
                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 9.35938H11C9.89543 9.35938 9 10.2548 9 11.3594V20.3594C9 21.4639 9.89543 22.3594 11 22.3594H20C21.1046 22.3594 22 21.4639 22 20.3594V11.3594C22 10.2548 21.1046 9.35938 20 9.35938Z"
                           stroke="#EA4C1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

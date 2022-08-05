@@ -1,81 +1,130 @@
-.vmware-content{
+.vmware-content {
 
-  &__grid{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1px;
     margin-bottom: 1px;
+    @media (max-width: 767.98px) {
+      grid-template-columns: 100%;
+      gap: 40px;
+      background: var(--bg);
+      padding: 40px 10px;
+      margin: 0;
+    }
   }
 
-  &__item{
+  &__item {
     background: var(--bg);
     padding: 70px 100px;
     position: relative;
+    @media (max-width: 1919.98px) {
+      padding: 90px 75px;
+    }
+    @media (max-width: 1439.98px) {
+      padding: 85px 10px 55px 10px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 0;
+    }
 
-    &:nth-child(1){
+    &:nth-child(1) {
       @include point-bottom-right;
     }
   }
 
-  &__title{
+  &__title {
     @include typo-paragraph-3;
     color: var(--yellow);
     margin-bottom: 20px;
+    @media (max-width: 1439.98px) {
+      font-size: 20px;
+    }
   }
 
-  &__content{
+  &__content {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
-    p{
+
+    p {
       @include typo-text;
+      @media (max-width: 767.98px){
+        font-size: 16px;
+      }
     }
 
-    ul{
+    ul {
       list-style: disc;
       padding-left: 20px;
     }
   }
 
-  &__bottom{
+  &__bottom {
     background: var(--bg);
     padding: 75px 230px 90px;
 
-    display:grid;
+    display: grid;
     grid-template-columns: 460px auto;
     gap: 160px;
     align-items: flex-start;
+    @media (max-width: 1919.98px) {
+      padding: 90px 75px 75px;
+    }
+    @media (max-width: 1439.98px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      padding: 80px 20px 50px;
+    }
+    @media (max-width: 767.98px) {
+      grid-template-columns: 100%;
+      gap: 60px;
+      padding: 0 10px 55px;
+    }
   }
 
-  &__desc{
+  &__desc {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
-    h3{
+
+    h3 {
       @include typo-paragraph-3;
       color: var(--yellow);
+      @media (max-width: 767.98px){
+        font-size: 20px;
+      }
     }
 
-    p,ul,li{
+    p, ul, li {
       @include typo-text;
+      @media (max-width: 767.98px){
+        font-size: 16px;
+      }
     }
 
-    ul{
+    ul {
       list-style: disc;
       padding-left: 15px;
     }
   }
 
-  &__recom{
+  &__recom {
     width: 290px;
     padding: 30px;
     border: 1px solid var(--yellow);
     position: relative;
     line-height: 132%;
+    @media (max-width: 1439.98px) {
+      margin-left: 40px;
+    }
+    @media (max-width: 767.98px){
+      margin: 0 auto;
+    }
 
-    &:before{
+    &:before {
       content: url("/images/icons/stars.svg");
       display: block;
       background: var(--bg);
@@ -85,7 +134,7 @@
       left: 30px;
     }
 
-    h3{
+    h3 {
       color: var(--yellow);
       font-weight: 600;
       text-transform: uppercase;

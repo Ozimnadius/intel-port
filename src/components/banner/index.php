@@ -1,4 +1,4 @@
-<div class="banner <?=$class ?>">
+<div class="banner <?= $class ?>">
     <div class="container">
         <div class="container-inner banner__container">
             <div class="banner__left">
@@ -21,16 +21,20 @@
                         </div>
                     <? endif; ?>
                     <div class="banner__img banner__img--mobile">
-                        <img src="<?= $picture ?>">
+                        <img src="<?= $picture ?>" alt="img">
                     </div>
                     <div class="banner__content">
                         <?= $content ?>
                     </div>
                     <div class="banner__btns">
-                        <? component("btn") ?>
+                        <? component("btn", array(
+                            "class" => "btn-main",
+                            "attrs"=>'data-event="openForm" data-name="formRequest" data-ok="formOk"'
+                        )) ?>
                         <? component("btn", array(
                             "class" => "btn-border",
-                            "text" => "Консультироваться"
+                            "text" => "Консультироваться",
+                            "attrs"=>'data-event="openForm" data-name="formCall" data-ok="formOk"'
                         )) ?>
                     </div>
                 </div>
@@ -38,7 +42,7 @@
             <div class="banner__right">
                 <div class="banner__img">
                     <div class="banner__img-wrap">
-                        <img src="<?= $picture ?>" alt="">
+                        <img src="<?= $picture ?>" alt="img">
                     </div>
                 </div>
             </div>

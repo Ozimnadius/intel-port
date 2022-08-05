@@ -41,8 +41,13 @@ extract(array_merge($default, $vars));
                     </div>
                 </div>
             </div>
-            <? if ($bottom): ?>
-                <div class="oai-algos__bottom">
+        </div>
+    </div>
+
+    <? if ($bottom): ?>
+        <div class="oai-algos__bottom">
+            <div class="container">
+                <div class="container-inner oai-algos__container">
                     <div class="oai-algos__cols">
                         <div class="oai-algos__col">
                             <p>
@@ -62,8 +67,9 @@ extract(array_merge($default, $vars));
                         </div>
                     </div>
                 </div>
-            <? endif; ?>
+            </div>
         </div>
-    </div>
+    <? endif; ?>
+
 </div>
 

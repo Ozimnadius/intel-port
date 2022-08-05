@@ -1,8 +1,8 @@
 .internet-about {
 
-  &--border-bottom-inner-gradient{
-    .internet-about__grid{
-      &:before{
+  &--border-bottom-inner-gradient {
+    .internet-about__grid {
+      &:before {
         content: '';
         display: block;
         position: absolute;
@@ -11,8 +11,11 @@
         right: 0;
         height: 1px;
         background: var(--gradient-grid);
+        @media (max-width: 1439.98px){
+          left: -20px;
+          right: -20px;
+        }
       }
-
     }
   }
 
@@ -21,15 +24,39 @@
     padding-bottom: 110px;
     @include point-bottom-left;
     @include point-bottom-right;
-
+    @media (max-width: 1919.98px) {
+      padding-bottom: 80px;
+    }
+    @media (max-width: 1439.98px){
+      padding-top: 55px;
+      padding-bottom: 65px;
+    }
+    @media (max-width: 767.98px){
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 595fr 680fr;
     gap: 75px;
+    @media (max-width: 1919.98px) {
+      grid-template-columns: 553px 1fr;
+      gap: 110px;
+    }
+    @media (max-width: 1439.98px){
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+      grid-template-columns: 100%;
+      gap: 55px;
+    }
+    @media (max-width: 767.98px){
+       gap: 30px;
+    }
 
-    &--center{
+    &--center {
       align-items: center;
     }
   }
@@ -38,6 +65,9 @@
     border: 1px dashed var(--divider-grid);
     position: relative;
     --offset: 20px;
+    @media (max-width: 767.98px){
+       --offset: 15px;
+    }
 
     &:before {
       content: '';
@@ -59,21 +89,33 @@
     h3 {
       @extend .title;
       margin-bottom: 40px;
+      @media (max-width: 1919.98px) {
+        margin-bottom: 20px;
+      }
+      @media (max-width: 767.98px){
+        margin-bottom: 35px;
+      }
     }
 
-    h6{
+    h6 {
       font-size: 20px;
       margin-bottom: 20px;
     }
 
     ul {
       display: grid;
-      gap: 25px;
+      gap: 20px;
 
       li {
         @include typo-text;
         padding-left: 45px;
         position: relative;
+        @media (max-width: 1439.98px){
+          padding-left: 27px;
+        }
+        @media (max-width: 767.98px){
+          font-size: 16px;
+        }
 
         &:before {
           content: '';
@@ -88,14 +130,20 @@
       }
     }
 
-    i{
+    i {
       @include typo-paragraph-italic;
       color: var(--txt-dark);
+      @media (max-width: 1439.98px){
+        font-size: 28px;
+      }
     }
 
-    p{
+    p {
       @include typo-text;
       margin-bottom: 25px;
+      @media (max-width: 767.98px){
+        font-size: 16px;
+      }
     }
   }
 }

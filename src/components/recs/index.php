@@ -30,7 +30,7 @@
                             <img src="/images/content/recs/img.jpg" alt="Ирина Алексеева">
                         </div>
                         <div class="rec__brand">
-                            <img src="/images/content/recs/brand.png">
+                            <img src="/images/content/recs/brand.png" alt="brand">
                         </div>
                     </div>
                     <div class="rec__right">
@@ -38,12 +38,19 @@
                         <div class="rec__prof">
                             Технический директор московского филиала компании «Престиж-Интернет»
                         </div>
+                        <div class="rec__brand rec__brand--tablet">
+                            <img src="/images/content/recs/brand.png" alt="brand">
+                        </div>
                         <div class="rec__desc">
                             ООО «ПРЕСТИЖ-ИНТЕРНЕТ» благодарит компанию ООО «ИНТЕЛПОРТ» за качественное предоставление
                             услуг
                             связи! Ваша компания зарекомендовала себя как надежный поставщик телекоммуникационных услуг.
                         </div>
-                        <a href="#" class="rec__link link">
+                        <a href="#"
+                           class="rec__link link"
+                           data-event="openAjaxForm"
+                           data-url="/php/recommendation.php"
+                           data-id="99">
                             Открыть письмо
                         </a>
                     </div>

@@ -1,43 +1,73 @@
-.support-grid{
-  display:grid;
-  grid-template-columns: repeat(4,1fr);
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1px;
+  @media (max-width: 1439.98px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 767.98px) {
+    grid-template-columns: 100%;
+    gap: 40px;
+    background: var(--bg);
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
 
 
-  &__col{
+  &__col {
     background: var(--bg);
     padding: 50px;
     position: relative;
     @include point-top-right;
     @include point-bottom-left;
+    @media (max-width: 1439.98px) {
+      padding: 40px 60px;
+    }
+    @media (max-width: 767.98px){
+      padding: 0 10px;
+    }
 
   }
 
-  &__title{
+  &__title {
     @include typo-paragraph-2;
     color: var(--yellow);
     min-height: 2.6em;
     margin-bottom: 45px;
+    @media (max-width: 1439.98px) {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+    @media (max-width: 767.98px){
+      font-size: 24px;
+      min-height: initial;
+      margin-bottom: 20px;
+    }
   }
 
-  &__list{
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 45px;
+    @media (max-width: 1439.98px) {
+      gap: 20px;
+    }
   }
 
-  &__item{
+  &__item {
     --margin: 8px;
-    p{
+
+    p {
       @include typo-text;
       color: var(--txt-dark);
 
     }
 
-    b{
+    b {
       font-size: 1.125em;
       color: var(--txt);
-      i{
+
+      i {
         font-style: italic;
       }
     }

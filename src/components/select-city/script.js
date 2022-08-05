@@ -1,8 +1,14 @@
-document.querySelectorAll('.select-city__item').forEach((i)=>{
-    i.addEventListener('click', function (e){
-        let $this = $(this);
+/*SELECT-CITY*/
+window.addEventListener("load", function (){
+   $('.select-city').on('click', function (e){
+       $(this).toggleClass('active');
+   });
 
-        $this.addClass('selected');
-        $(this).siblings().removeClass('selected');
-    });
+   window.addEventListener('click', function (e){
+       let target = e.target;
+
+       if (!target.closest('.select-city')){
+           document.querySelector('.select-city').classList.remove('active');
+       }
+   });
 });

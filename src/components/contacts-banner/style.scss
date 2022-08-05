@@ -1,28 +1,57 @@
-.contacts-banner{
+.contacts-banner {
 
-  &__container{
+  &__container {
     min-height: 750px;
     grid-template-columns: 100%;
     align-items: flex-start;
     padding-top: 177px;
+    @media (max-width: 1919.98px) {
+      grid-template-columns: 100%;
+      min-height: 555px;
+    }
+    @media (max-width: 1439.98px){
+      min-height: auto;
+      padding-bottom: 55px;
+    }
+    @media (max-width: 767.98px){
+      padding-bottom: 40px;
+    }
 
-    &:before{
+    &:before {
       display: none;
     }
   }
 
-  &__img{
+  &__img {
     position: absolute;
     right: 30px;
     top: 130px;
+    @media (max-width: 1919.98px){
+      right: 70px;
+    }
+    @media (max-width: 1439.98px){
+      width: 511px;
+      right: 0;
+      top: 155px;
+    }
   }
 
-  &__wrap{
+  &__wrap {
     position: relative;
     z-index: 2;
   }
 
-  &__contacts{
+  &__title{
+    @media (max-width: 1439.98px){
+      margin-bottom: 50px;
+    }
+    @media (max-width: 767.98px){
+      margin-top: 135px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__contacts {
     border: 1px solid var(--divider-grid);
     border-image: var(--gradient-new) 1;
     background: rgba(5, 13, 30, 0.02);
@@ -31,28 +60,64 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 55px 85px;
-  }
 
-  &__item{
-    h2{
-      @include typo-heading-3;
+    @media (max-width: 1439.98px){
+      padding: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    @media (max-width: 767.98px){
+      padding: 30px 15px;
     }
   }
 
-  &__email{
-    p{
+  &__item {
+    &:nth-child(1){
+      @media (max-width: 1439.98px){
+        width: 100%;
+      }
+    }
+
+    &:nth-child(4){
+      @media (max-width: 767.98px){
+        width: 190px;
+        margin: 0 auto;
+      }
+      a{
+        @media (max-width: 767.98px){
+          width: 190px;
+          font-size: 14px;
+        }
+      }
+    }
+    h2 {
+      @include typo-heading-3;
+      @media (max-width: 1439.98px){
+        font-size: 28px;
+      }
+      @media (max-width: 767.98px){
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__email {
+    @media (max-width: 767.98px){
+      font-size: 12px;
+    }
+    p {
       font-size: 1.125em;
       font-weight: 500;
     }
-    a{
+
+    a {
       font-size: 1.25em;
       font-weight: 700;
       color: var(--yellow);
       @include tr;
 
-      &:hover{
+      &:hover {
         color: var(--orange-red);
       }
     }

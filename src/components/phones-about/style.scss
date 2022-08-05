@@ -1,25 +1,40 @@
 .phones-about {
   padding-top: 70px;
   padding-bottom: 70px;
+  @media (max-width: 767.98px){
+    padding: 40px 0;
+  }
 
-  &__desc{
+  &__desc {
     margin-bottom: 70px;
+    @media (max-width: 1919.98px) {
+      margin-bottom: 85px;
+    }
+    @media (max-width: 1439.98px){
+      margin-bottom: 0;
+    }
   }
 
-  &__list{
+  &__list {
     margin-bottom: 145px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     align-items: center;
-    gap: 110px;
+    @media (max-width: 1919.98px) {
+      margin-bottom: 110px;
+    }
+    @media (max-width: 1439.98px){
+      display: none;
+    }
   }
 
-  &__li{
+  &__li {
     padding-left: 35px;
     position: relative;
     @include typo-paragraph-3;
 
-    &:before{
+    &:before {
       content: '';
       display: block;
       @include point;
@@ -29,26 +44,35 @@
     }
   }
 
-  &__grid{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 65px 180px;
+  &__grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 65px 200px;
+    padding-right: 60px;
+    @media (max-width: 1919.98px) {
+      padding-right: 0;
+      gap: 50px 20px;
+    }
+    @media (max-width: 1439.98px){
+      display: none;
+    }
   }
 
-  &__title{
+  &__title {
     margin-bottom: 30px;
   }
 
-  &__txt{
+  &__txt {
     @include typo-text;
     color: var(--txt-dark);
   }
 
-  &__content{
+  &__content {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    p{
+
+    p {
       @include typo-paragraph-3;
 
     }

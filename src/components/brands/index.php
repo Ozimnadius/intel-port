@@ -5,12 +5,12 @@
                 <div class="brands__track">
                     <? foreach ($row as $i): ?>
                         <div class="brands__item">
-                            <img src="<?=$i ?>">
+                            <img src="<?=$i ?>" alt="brand">
                         </div>
                     <? endforeach; ?>
                     <? foreach ($row as $i): ?>
                         <div class="brands__item">
-                            <img src="<?=$i ?>">
+                            <img src="<?=$i ?>" alt="brand">
                         </div>
                     <? endforeach; ?>
                 </div>

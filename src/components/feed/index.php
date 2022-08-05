@@ -7,7 +7,10 @@ extract(array_merge($default, $vars));
 <div class="feed <?= $class ?>">
     <div class="container">
         <div class="container-inner feed__container">
-            <form action="/" method="post" class="feed__form">
+            <form action="/php/ajax.php"
+                  method="post"
+                  class="feed__form"
+                  data-event="validate">
                 <div class="feed__top">
                     <? if (!isset($titleIcon)): ?>
                         <div class="feed__col">
@@ -52,7 +55,9 @@ extract(array_merge($default, $vars));
                                    name="tel"
                                    class="input"
                                    placeholder="Телефон*"
-                                   required>
+                                   data-rule-required="true"
+                                   data-msg-required="Заполните телефон"
+                                   data-msg-tel="Заполните телефон">
                         </div>
                     <? endif; ?>
                     <? if (in_array("email", $fields)): ?>
@@ -91,10 +96,13 @@ extract(array_merge($default, $vars));
                     <div class="feed__policy">
                         <? component("accept", array(
                             "name" => "accept",
-                            "content" => '<p>Согласен на обработку персональных данных в соответствии с <a href="/policy/">Политикой конфиденциальности.</a></p>'
+                            "content" => '<span>Согласен на обработку персональных данных в соответствии с <a href="/policy/">Политикой конфиденциальности.</a></span>'
                         )) ?>
                     </div>
                 <? endif; ?>
+                <button type="submit" class="feed__submit feed__submit--tablet btn btn-main">
+                    <span><?= $btnName ?></span>
+                </button>
             </form>
         </div>
     </div>

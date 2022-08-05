@@ -1,9 +1,19 @@
-.oai-grid{
-  display:grid;
-  grid-template-columns: repeat(4,1fr);
-  gap:1px;
+.oai-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  @media (max-width: 1439.98px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 767.98px) {
+    grid-template-columns: 100%;
+    gap: 30px;
+    background: var(--bg);
+    margin-top: -1px;
+    padding: 0 10px 50px;
+  }
 
-  &__item{
+  &__item {
     @extend .internet-indicators__item;
     background: var(--bg);
     padding: 50px;
@@ -11,39 +21,69 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    @media (max-width: 1919.98px) {
+      padding: 45px 20px;
+    }
+    @media (max-width: 1439.98px) {
+      padding: 50px;
+    }
+    @media (max-width: 767.98px){
+      padding: 0;
+    }
 
-    &:nth-child(1){
-      &:before{
+    &:nth-child(1) {
+      &:before {
         display: none;
       }
     }
 
-    &:nth-child(4),&:nth-child(5){
-      &:after{
+    &:nth-child(4), &:nth-child(5) {
+      &:after {
         display: none;
       }
     }
 
-    h3{
+    &:nth-child(1), &:nth-child(5), &:nth-child(6), &:nth-child(10) {
+      padding: 50px;
+      @media (max-width: 1919.98px) {
+        padding: 45px 20px;
+      }
+      @media (max-width: 1439.98px) {
+        padding: 50px;
+      }
+      @media (max-width: 767.98px) {
+        padding: 0;
+        display: flex;
+      }
+    }
+
+    h3 {
       @include typo-paragraph-3;
       color: var(--yellow);
+      @media (max-width: 1439.98px) {
+        font-size: 20px;
+      }
     }
 
-    ul{
+    ul {
       display: flex;
       flex-direction: column;
       gap: 15px;
-      li{
+
+      li {
         position: relative;
         padding-left: 35px;
 
-        &:before{
+        &:before {
           content: '';
           display: block;
           position: absolute;
           top: 6px;
           left: 0;
           @include point;
+          @media (max-width: 1439.98px) {
+            display: block;
+          }
 
         }
       }

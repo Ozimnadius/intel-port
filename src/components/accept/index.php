@@ -1,6 +1,11 @@
+<? $default = array(
+    "name" => "accept"
+);
+extract(array_merge($default, $vars));
+?>
 <label class="accept">
     <input type="checkbox"
-           name="<? $name ?>"
+           name="<?=$name ?>"
            class="accept__input"
            checked>
     <span class="accept__fake">

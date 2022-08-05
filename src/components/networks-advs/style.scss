@@ -1,21 +1,41 @@
 .networks-advs {
+
   &__title {
     margin-bottom: 45px;
+    @media (max-width: 1919.98px) {
+      margin-bottom: 25px;
+    }
   }
 
-  &__cols{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
+  &__cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 80px;
+    @media (max-width: 1439.98px) {
+      grid-template-columns: 100%;
+      gap: 30px;
+    }
+    @media (max-width: 767.98px){
+      gap: 15px;
+    }
   }
 
-  &__col{
+  &__col {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @media (max-width: 767.98px){
+      gap: 15px;
+    }
 
-    p{
+    p {
       @include typo-paragraph-3;
+      @media (max-width: 1439.98px){
+        font-size: 20px;
+      }
+      @media (max-width: 767.98px){
+        font-size: 16px;
+      }
     }
   }
 }

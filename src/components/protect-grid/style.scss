@@ -4,12 +4,22 @@
   &__item{
     @extend .internet-indicators__item;
     background: var(--bg);
-    padding: 50px 25px 90px;
+    padding: 50px 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    min-height: 310px;
+    @media (max-width: 1439.98px){
+      min-height: 250px;
+      padding: 40px 20px;
+    }
+    @media (max-width: 767.98px){
+      padding: 20px 10px;
+      min-height: initial;
+    }
+
 
     &:nth-child(1){
       &:before{
@@ -22,15 +32,25 @@
         display: none;
       }
     }
+
   }
 
   &__title{
     @include typo-paragraph-3;
     color: var(--yellow);
+    @media (max-width: 1439.98px){
+      font-size: 16px;
+    }
+    @media (max-width: 767.98px){
+      font-size: 14px;
+    }
   }
 
   &__txt{
     @include typo-text;
+    @media (max-width: 1439.98px){
+      font-size: 13px;
+    }
   }
 
 }

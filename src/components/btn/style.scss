@@ -11,6 +11,9 @@
   position: relative;
   overflow: hidden;
   max-width: 100%;
+  @media (max-width: 1439.98px){
+    font-size: 12px;
+  }
 
   * {
     position: relative;

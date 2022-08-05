@@ -1,22 +1,29 @@
-.title{
+.title {
   color: var(--yellow);
   @include typo-title-6;
 
-  &--big{
+  &--big {
     @include typo-title-2;
   }
 }
 
-.link{
+.link {
   color: var(--yellow);
   text-decoration: underline;
   @include tr;
-  &:hover{
+
+  &:hover {
     color: var(--orange-red);
+  }
+
+  svg {
+    path {
+      fill: currentColor;
+    }
   }
 }
 
-.arr{
+.arr {
   pointer-events: all;
   @include tr;
 
@@ -24,31 +31,40 @@
     color: var(--orange-red);
   }
 
-  &.swiper-button-disabled{
+  &.swiper-button-disabled {
     color: var(--txt-dark);
   }
 }
 
-.border-top{
+.border-top {
   border-top: 1px solid var(--divider-grid);
 }
 
-.border-bottom{
+.border-bottom {
   border-bottom: 1px solid var(--divider-grid);
 }
 
-.point-top-left{
+.point-top-left {
   @include point-top-left;
 }
 
-.point-top-right{
+.point-top-right {
   @include point-top-right;
 }
 
-.point-bottom-left{
+.point-bottom-left {
   @include point-bottom-left;
 }
 
-.point-bottom-right{
+.point-bottom-right {
   @include point-bottom-right;
+}
+
+.fancybox-slide {
+
+  &--html {
+    @media (max-width: 767.98px) {
+      padding: 0!important;
+    }
+  }
 }

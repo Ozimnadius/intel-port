@@ -2,13 +2,30 @@
   --offset-img: 0px;
   --offset-map: 0px;
   --tr: 0ms;
+  --margin-right: -120px;
+
+  &__container {
+    @media (max-width: 1439.98px) {
+      padding: 0;
+    }
+
+  }
 
   &__wrap {
     border-left: 1px solid var(--divider-grid);
     padding-left: 50px;
-    margin-right: -120px;
+    margin-right: var(--margin-right);
     position: relative;
     overflow: hidden;
+    @media (max-width: 1919.98px) {
+      padding-left: 75px;
+      --margin-right: 0;
+    }
+    @media (max-width: 1439.98px) {
+      border: none;
+      padding: 0;
+      margin-right: 0;
+    }
   }
 
   &__map {
@@ -19,6 +36,19 @@
     transform: translateY(-50%) translateX(var(--offset-map));
     transition-timing-function: ease-out;
     transition-duration: var(--tr);
+    @media (max-width: 1919.98px) {
+      left: 450px;
+    }
+    @media (max-width: 1439.98px) {
+      left: 310px;
+    }
+    @media (max-width: 767.98px) {
+      left: 0;
+    }
+
+    img {
+      max-width: initial;
+    }
   }
 
   &__imgs {
@@ -29,20 +59,55 @@
     transform: translateX(var(--offset-img));
     transition-timing-function: ease-out;
     transition-duration: var(--tr);
+    @media (max-width: 1919.98px) {
+      left: 640px;
+    }
+    @media (max-width: 1439.98px) {
+      left: 325px;
+    }
+    @media (max-width: 767.98px) {
+      left: 170px;
+    }
   }
 
   &__swiper {
     z-index: 3;
     margin-left: -50px;
     padding-left: 50px;
+    @media (max-width: 1919.98px) {
+      margin-left: -75px;
+      padding-left: 75px;
+    }
+    @media (max-width: 1439.98px) {
+      margin-left: 0;
+      padding-left: 20px;
+    }
+    @media (max-width: 767.98px) {
+      padding-left: 10px;
+    }
   }
 
   &__slide {
     height: auto;
     width: 475px;
+    @media (max-width: 1439.98px) {
+      width: 345px;
+    }
+    @media (max-width: 767.98px) {
+      width: 240px;
+    }
 
     &--big {
       width: 620px;
+      @media (max-width: 1919.98px) {
+        width: 690px;
+      }
+      @media (max-width: 1439.98px) {
+        width: 440px;
+      }
+      @media (max-width: 767.98px) {
+        width: 240px;
+      }
     }
   }
 
@@ -54,6 +119,12 @@
     font-size: 50px;
     font-weight: 500;
     line-height: 132%;
+    @media (max-width: 1439.98px) {
+      font-size: 38px;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 22px;
+    }
   }
 
   &__title {
@@ -62,6 +133,12 @@
     font-style: italic;
     line-height: 1;
     @include gradient-txt(var(--gradient-btn));
+    @media (max-width: 1439.98px) {
+      font-size: 227px;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 120px;
+    }
   }
 
   &__txt {
@@ -69,6 +146,32 @@
     font-weight: 300;
     margin-top: 20px;
     margin-bottom: 35px;
+    @media (max-width: 1439.98px) {
+      font-size: 18px;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 12px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__btn{
+    @media (max-width: 767.98px){
+      font-size: 7px;
+      padding: 6px 20px;
+    }
+  }
+
+  &__info{
+    display: none;
+    margin-top: 45px;
+    @media (max-width: 1439.98px){
+      display: block;
+    }
+    @media (max-width: 767.98px){
+      margin-top: 85px;
+    }
   }
 }
 
@@ -82,6 +185,12 @@
     .slide {
       &__item {
         padding-top: 60px;
+        @media (max-width: 1439.98px) {
+          padding-top: 40px;
+        }
+        @media (max-width: 767.98px) {
+          padding-top: 15px;
+        }
       }
     }
   }
@@ -103,6 +212,15 @@
     position: relative;
     height: 410px;
     padding-right: 40px;
+    @media (max-width: 1439.98px) {
+      height: 315px;
+    }
+    @media (max-width: 767.98px) {
+      height: 260px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
 
   }
 
@@ -113,9 +231,18 @@
     margin-bottom: 5px;
     line-height: 112%;
     @include gradient-txt(var(--gradient-btn));
+    @media (max-width: 1439.98px) {
+      font-size: 60px;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 24px;
+    }
 
     &--big {
       font-size: 124px;
+      @media (max-width: 1439.98px) {
+        font-size: 94px;
+      }
     }
 
   }
@@ -126,5 +253,21 @@
     font-style: italic;
     margin-bottom: 15px;
     line-height: 114%;
+    @media (max-width: 1439.98px) {
+      font-size: 20px;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__txt {
+    @media (max-width: 1439.98px) {
+      font-size: 12px;
+    }
+    @media (max-width: 767.98px){
+      font-size: 12px;
+    }
   }
 }

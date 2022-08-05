@@ -6,17 +6,41 @@
     position: relative;
     @include point-bottom-left;
     @include point-bottom-right;
+    @media (max-width: 1439.98px){
+      padding-top: 45px;
+      padding-bottom: 90px;
+    }
+    @media (max-width: 767.98px){
+      padding-top: 25px;
+      padding-bottom: 60px;
+    }
   }
 
   &__list{
     margin-bottom: 55px;
+    @media (max-width: 1439.98px){
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto 55px;
+    }
   }
 
   &__desc{
     margin-bottom: 70px;
+    @media (max-width: 1919.98px){
+      margin-bottom: 100px;
+    }
+    @media (max-width: 767.98px){
+      margin-bottom: 55px;
+    }
   }
 
   &__advantages{
+    @media (max-width: 1439.98px){
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+    }
     &:before{
       content: '';
       display: block;
@@ -26,6 +50,9 @@
       right: 0;
       height: 1px;
       background: var(--gradient-grid);
+      @media (max-width: 1919.98px){
+        display: none;
+      }
     }
   }
 

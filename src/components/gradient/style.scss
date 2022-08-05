@@ -1,44 +1,70 @@
 .gradient {
 
+  .container {
+    @media (max-width: 1439.98px) {
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
   &__container {
     background: linear-gradient(45deg, #40398c 24.82%, #9e434f 41.8%, #d39117 53.38%, #9d4350 63.87%, #463a88 77.79%);
     background-size: 200% 100%;
     animation: gradient-animation 30s ease infinite;
-    border: none;
-
+    border: 1px solid transparent;
     display: grid;
     gap: 1px;
-    padding: 1px;
-    background-clip: padding-box;
+    padding: 0;
+    @media (max-width: 1439.98px) {
+      border-left: none;
+      border-right: none;
+    }
   }
 
-  &__top{
+  &__top {
     background: var(--bg);
     position: relative;
     padding: 60px;
     @include point-bottom-left;
     @include point-bottom-right;
+    @media (max-width: 1439.98px) {
+      padding: 40px;
+
+    }
+    @media (max-width: 767.98px) {
+      padding: 30px 10px;
+    }
   }
 
-  &__title{
+  &__title {
     color: var(--yellow);
     @include typo-title-2;
     text-align: center;
+    @media (max-width: 767.98px) {
+      font-size: 28px;
+      text-align: left;
+    }
   }
 
-  &__txt{
+  &__txt {
     @include typo-text;
     margin-top: 15px;
     text-align: center;
+    @media (max-width: 767.98px){
+      font-size: 16px;
+      text-align: left;
+    }
   }
 
   &__bottom {
     position: relative;
     @include point-bottom-left;
     @include point-bottom-right;
+
   }
 
-  &__sub{
+  &__sub {
     text-align: center;
     padding: 70px;
     @include typo-paragraph-2;
@@ -46,6 +72,12 @@
     position: relative;
     @include point-bottom-left;
     @include point-bottom-right;
+    @media (max-width: 1919.98px) {
+      padding: 50px;
+    }
+    @media (max-width: 1439.98px) {
+      display: none;
+    }
   }
 }
 

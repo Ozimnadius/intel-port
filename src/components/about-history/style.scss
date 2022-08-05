@@ -1,40 +1,101 @@
-.about-history{
+.about-history {
 
-  &__container{
+  &__container {
     border-right-color: transparent;
     padding-right: 140px;
+    @media (max-width: 1919.98px) {
+      padding-right: 75px;
+    }
+    @media (max-width: 1439.98px){
+      padding-right: 0;
+    }
 
-    &--last{
+    &--last {
       @include point-bottom-left;
     }
   }
 
-  &__top{
+  &__top {
     padding-top: 110px;
     padding-bottom: 120px;
-    display:grid;
+    display: grid;
     grid-template-columns: 575px 1fr;
     gap: 20px;
+    @media (max-width: 1919.98px) {
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+    @media (max-width: 1439.98px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      grid-template-columns: 100%;
+      gap: 25px;
+    }
+    @media (max-width: 767.98px){
+      padding-top: 40px;
+      gap: 20px;
+    }
 
   }
 
-  &__txt{
+  &__title {
+    @include typo-heading-2;
+    @media (max-width: 1439.98px) {
+      font-size: 36px;
+    }
+    @media (max-width: 767.98px){
+      font-size: 28px;
+    }
+  }
+
+  &__txt {
     @include typo-paragraph-3;
+    @media (max-width: 1439.98px) {
+      font-size: 20px;
+    }
+    @media (max-width: 767.98px){
+      font-size: 16px;
+    }
   }
 
-  &__bottom{
+  &__bottom {
     padding-top: 150px;
     padding-bottom: 110px;
+    @media (max-width: 1919.98px) {
+      padding-top: 80px;
+      padding-bottom: 70px;
+    }
+    @media (max-width: 1439.98px) {
+      padding-top: 60px;
+    }
+    @media (max-width: 767.98px){
+      padding-top: 50px;
+    }
   }
 
-  &__sub{
+  &__sub {
     @include typo-paragraph-1;
     margin-bottom: 70px;
+    @media (max-width: 1439.98px) {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 767.98px){
+      font-size: 20px;
+    }
   }
 
-  &__desc{
+  &__desc {
     max-width: 900px;
     margin-left: auto;
     @include typo-paragraph-italic;
+    @media (max-width: 1439.98px) {
+      font-size: 20px;
+    }
+    @media (max-width: 767.98px){
+      font-style: normal;
+      color: var(--txt-dark);
+      font-size: 16px;
+    }
   }
 }

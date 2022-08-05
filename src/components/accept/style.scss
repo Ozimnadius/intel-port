@@ -25,6 +25,7 @@
   }
 
   &__check {
+    flex-shrink: 0;
     svg {
       display: none;
 
@@ -35,7 +36,7 @@
   }
 
   &__content {
-    p {
+    span {
       color: var(--txt-dark);
       @include typo-footnote;
 

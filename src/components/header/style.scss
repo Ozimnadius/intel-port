@@ -1,34 +1,137 @@
-.header{
+.header {
   position: absolute;
   z-index: 10;
   top: 0;
   left: 0;
   right: 0;
 
-  &__container{
+
+  &__container {
+    min-height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px 0 65px;
-
     @include point-bottom-left;
     @include point-bottom-right;
+
+    @media (max-width: 1919.98px) {
+      padding: var(--container-inner-padding);
+    }
+    @media (max-width: 767.98px){
+       justify-content: flex-start;
+    }
   }
 
-  &__logo{
+  &__mmenu-open {
+    display: none;
+
+    @media (max-width: 1919.98px) {
+      display: block;
+    }
+    @media (max-width: 767.98px){
+      margin-right: 10px;
+    }
+
+    svg{
+      @media (max-width: 767.98px){
+        width: 21px;
+        height: 13px;
+      }
+    }
+  }
+
+  &__logo {
+    flex-shrink: 0;
     margin-right: 15px;
+    @media (max-width: 1919.98px) {
+      margin: 0;
+    }
+    @media (max-width: 1439.98px) {
+      width: 150px;
+    }
+    @media (max-width: 767.98px) {
+      width: 120px;
+      margin-right: auto;
+    }
   }
 
-  &__tel{
-    a{
+  &__socials {
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  &__tel {
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+
+    a {
       font-size: 18px;
       font-weight: 600;
       @include tr;
 
-      &:hover{
+      &:hover {
         color: var(--yellow);
       }
     }
+  }
+
+  &__nav {
+    @media (max-width: 1919.98px) {
+      display: none;
+    }
+  }
+
+  &__support {
+    @media (max-width: 1439.98px) {
+      position: absolute;
+      top: calc(100% + 20px);
+      right: 0px;
+    }
+    @media (max-width: 767.98px){
+      top: calc(100% + 10px);
+    }
+
+    a {
+      @media (max-width: 1439.98px) {
+        padding: 0;
+        border: none;
+        background: none;
+      }
+
+      &:before, &:after {
+        @media (max-width: 1439.98px) {
+          display: none;
+        }
+      }
+
+      .desctop {
+        @media (max-width: 1439.98px) {
+          display: none;
+        }
+      }
+
+      .tablet {
+        display: none;
+        @media (max-width: 1439.98px) {
+          display: block;
+        }
+        @media (max-width: 767.98px){
+          display: none;
+        }
+      }
+
+      .mobile {
+        display: none;
+        @media (max-width: 767.98px){
+          display: block;
+        }
+      }
+    }
+
+
   }
 
 }

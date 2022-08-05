@@ -2,6 +2,16 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
+  @media (max-width: 1439.98px){
+     grid-template-columns: repeat(2,1fr);
+  }
+  @media (max-width: 767.98px){
+     grid-template-columns: 100%;
+    gap: 35px;
+    background: var(--bg);
+    margin-top: -1px;
+    padding: 0 10px 40px;
+  }
 
   &__item {
     background: var(--bg);
@@ -9,6 +19,16 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    @media (max-width: 1919.98px){
+      padding: 40px 15px 65px 20px;
+    }
+    @media (max-width: 1439.98px){
+      padding: 55px 50px 95px;
+    }
+    @media (max-width: 767.98px){
+      padding: 0;
+      gap: 20px;
+    }
 
     h3{
       color: var(--yellow);
@@ -18,13 +38,19 @@
     ul{
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 20px;
       max-width: 325px;
+      @media (max-width: 767.98px){
+        max-width: 100%;
+      }
 
       li{
         position: relative;
         line-height: 132%;
         padding-left: 35px;
+        @media (max-width: 767.98px){
+          padding-left: 20px;
+        }
 
         &:before{
           content: '';
@@ -33,6 +59,9 @@
           position: absolute;
           top: 8px;
           left: 0;
+          @media (max-width: 1439.98px){
+            display: block;
+          }
         }
       }
     }

@@ -4,8 +4,20 @@
   border: 1px solid var(--divider-grid);
   padding: 10px 24px;
   font-size: 18px;
+  @media (max-width: 1439.98px){
+    height: 50px;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
 
   &:active,&:focus{
     border-color: var(--orange-red);
+  }
+
+  &.error{
+    border-color: red;
+    border-image: none;
+    background: none;
+    margin-bottom: 0;
   }
 }

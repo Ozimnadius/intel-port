@@ -1,3 +1,4 @@
+/*INDEX-SERVS*/
 window.addEventListener('load', function () {
 
     let $main = $('.index-servs'),

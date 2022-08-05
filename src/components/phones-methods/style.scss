@@ -1,4 +1,7 @@
 .phones-methods{
+  @media (max-width: 1439.98px){
+    display: none;
+  }
 
   &__container{
     padding-top: 50px;

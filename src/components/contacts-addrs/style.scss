@@ -1,19 +1,39 @@
 .contacts-addrs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
+  @media (max-width: 1439.98px) {
+    grid-template-columns: 100%;
+    gap: 85px;
+  }
+  @media (max-width: 767.98px){
+     gap: 65px;
+  }
 
   &__item {
     padding-top: 45px;
     padding-bottom: 45px;
+    @media (max-width: 1919.98px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    @media (max-width: 1439.98px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
 
     &:first-child {
       border-right: 1px dashed var(--divider-grid);
       padding-right: 80px;
+      @media (max-width: 1919.98px) {
+        padding-right: 10px;
+      }
     }
 
     &:last-child {
       padding-left: 80px;
+      @media (max-width: 1919.98px) {
+        padding-left: 10px;
+      }
     }
   }
 }
@@ -22,7 +42,17 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 50px;
-  align-items: center;
+  @media (max-width: 1919.98px) {
+    gap: 30px;
+  }
+  @media (max-width: 1439.98px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 767.98px){
+     grid-template-columns: 100%;
+    gap: 20px;
+  }
 
   &__city {
     @include typo-paragraph-2;
@@ -30,6 +60,9 @@
     align-items: center;
     gap: 15px;
     margin-bottom: 10px;
+    @media (max-width: 767.98px){
+      font-size: 24px;
+    }
 
     svg {
       display: block;
@@ -49,11 +82,23 @@
     p {
       @include typo-text;
       color: var(--logo-grey);
+      @media (max-width: 767.98px){
+        font-size: 16px;
+      }
     }
   }
 
-  &__content{
+  &__content {
     @include typo-text;
     margin-bottom: 12px;
+    @media (max-width: 767.98px){
+      font-size: 16px;
+    }
+  }
+
+  &__link{
+    @media (max-width: 767.98px){
+      font-size: 18px;
+    }
   }
 }

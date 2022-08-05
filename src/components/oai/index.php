@@ -5,7 +5,7 @@
                 <div class="internet-about__grid oai__grid">
                     <div class="internet-about__left">
                         <div class="internet-about__img">
-                            <img src="/images/content/internet/about/oai.jpg">
+                            <img src="/images/content/internet/about/oai.jpg" alt="lorem">
                         </div>
                     </div>
                     <div class="internet-about__right">

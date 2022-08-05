@@ -8,17 +8,35 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    @media (max-width: 1439.98px){
+       grid-template-columns: 100%;
+      gap: 35px;
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__left{
     padding-top: 65px;
+    @media (max-width: 1439.98px){
+      order: 1;
+      padding-top: 0;
+    }
   }
 
   &__title{
     margin-bottom: 30px;
+    @media (max-width: 767.98px){
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
   }
 
   &__content{
     max-width: 550px;
+    @media (max-width: 767.98px){
+      font-size: 16px;
+    }
   }
 }

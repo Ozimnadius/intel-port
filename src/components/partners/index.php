@@ -102,8 +102,9 @@
             <div class="title partners__title">Партнёры</div>
             <div class="partners__desc">
                 <div class="partners__content">
-                    <img src="/images/content/partners/img.png" alt="">
-                    <p>Мы дорожим доверием крупного бизнеса, постоянно совершенствуем свой сервис и инвестируем в развитие технической базы.  </p>
+                    <img src="/images/content/partners/img.png" alt="partner">
+                    <p>Мы дорожим доверием крупного бизнеса, постоянно совершенствуем свой сервис и инвестируем в
+                        развитие технической базы. </p>
                 </div>
             </div>
             <div class="partners__slider">
@@ -114,10 +115,10 @@
                                 <div class="partners__grid">
                                     <? foreach ($slide as $i): ?>
                                         <div class="partner">
-                                            <img src="<?= $i["img"] ?>">
+                                            <img src="<?= $i["img"] ?>" alt="partner">
                                             <template>
                                                 <div class="partners__content">
-                                                    <img src="<?= $i["img2"] ?>" alt="">
+                                                    <img src="<?= $i["img2"] ?>" alt="partner">
                                                     <p><?= $i["txt"] ?></p>
                                                 </div>
                                             </template>
@@ -128,9 +129,29 @@
                         <? endforeach; ?>
                     </div>
                 </div>
+                <div class="partners__swiper-mobile swiper">
+                    <div class="swiper-wrapper">
+                        <? foreach ($partners as $slide): ?>
+                            <? foreach ($slide as $i): ?>
+                                <div class="swiper-slide partners__slide-mobile">
+                                    <div class="partner">
+                                        <img src="<?= $i["img"] ?>" alt="partner">
+                                        <template>
+                                            <div class="partners__content">
+                                                <img src="<?= $i["img2"] ?>" alt="partner">
+                                                <p><?= $i["txt"] ?></p>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                            <? endforeach; ?>
+                        <? endforeach; ?>
+                    </div>
+                </div>
                 <div class="partners__nav">
                     <a href="#" class="partners__arr partners__prev arr">
-                        <svg width="139" height="59" viewBox="0 0 139 59" fill="none"
+                        <span class="desctop">
+                            <svg width="139" height="59" viewBox="0 0 139 59" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.2929 30.5225C22.9024 30.132 22.9024 29.4989 23.2929 29.1083L29.6569 22.7444C30.0474 22.3538 30.6805 22.3538 31.0711 22.7444C31.4616 23.1349 31.4616 23.7681 31.0711 24.1586L25.4142 29.8154L31.0711 35.4723C31.4616 35.8628 31.4616 36.496 31.0711 36.8865C30.6805 37.277 30.0474 37.277 29.6569 36.8865L23.2929 30.5225ZM139 30.8154L24 30.8154L24 28.8154L139 28.8154L139 30.8154Z"
                                   fill="url(#paint0_linear_975_1430)"/>
@@ -144,9 +165,19 @@
                                 </linearGradient>
                             </defs>
                         </svg>
+                        </span>
+                        <span class="mobile">
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20.6201" r="19.5"
+                                                                            transform="rotate(-180 20 20.6201)"
+                                                                            stroke="#2A395B"/><path
+                                        d="M10.1464 20.2666C9.95119 20.4618 9.95119 20.7784 10.1464 20.9737L13.3284 24.1556C13.5237 24.3509 13.8403 24.3509 14.0355 24.1556C14.2308 23.9604 14.2308 23.6438 14.0355 23.4485L11.2071 20.6201L14.0355 17.7917C14.2308 17.5964 14.2308 17.2798 14.0355 17.0846C13.8403 16.8893 13.5237 16.8893 13.3284 17.0846L10.1464 20.2666ZM40 20.1201L10.5 20.1201L10.5 21.1201L40 21.1201L40 20.1201Z"
+                                        fill="#2A395B"/></svg>
+                        </span>
                     </a>
                     <a href="#" class="partners__arr partners__next arr">
-                        <svg width="139" height="59" viewBox="0 0 139 59" fill="none"
+                        <span class="desctop">
+                            <svg width="139" height="59" viewBox="0 0 139 59" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path d="M115.707 30.5225C116.098 30.132 116.098 29.4989 115.707 29.1083L109.343 22.7444C108.953 22.3538 108.319 22.3538 107.929 22.7444C107.538 23.1349 107.538 23.7681 107.929 24.1586L113.586 29.8154L107.929 35.4723C107.538 35.8628 107.538 36.496 107.929 36.8865C108.319 37.277 108.953 37.277 109.343 36.8865L115.707 30.5225ZM-8.74228e-08 30.8154L115 30.8154L115 28.8154L8.74228e-08 28.8154L-8.74228e-08 30.8154Z"
                                   fill="url(#paint0_linear_975_1427)"/>
@@ -159,6 +190,14 @@
                                 </linearGradient>
                             </defs>
                         </svg>
+                        </span>
+                        <span class="mobile">
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20.6201" r="19.5"
+                                                                            stroke="#EAA521"/><path
+                                        d="M29.8536 20.9737C30.0488 20.7784 30.0488 20.4618 29.8536 20.2666L26.6716 17.0846C26.4763 16.8893 26.1597 16.8893 25.9645 17.0846C25.7692 17.2798 25.7692 17.5964 25.9645 17.7917L28.7929 20.6201L25.9645 23.4485C25.7692 23.6438 25.7692 23.9604 25.9645 24.1557C26.1597 24.3509 26.4763 24.3509 26.6716 24.1557L29.8536 20.9737ZM0 21.1201H29.5V20.1201H0V21.1201Z"
+                                        fill="#EAA521"/></svg>
+                        </span>
                     </a>
                 </div>
                 <div class="partners__pag"></div>

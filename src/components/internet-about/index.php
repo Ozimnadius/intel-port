@@ -4,7 +4,7 @@
             <div class="internet-about__grid">
                 <div class="internet-about__left">
                     <div class="internet-about__img">
-                        <img src="<?= $img ?>">
+                        <img src="<?= $img ?>" alt="lorem">
                     </div>
                 </div>
                 <div class="internet-about__right">

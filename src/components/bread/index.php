@@ -9,7 +9,7 @@
                 <?=$i["name"] ?>
             </a>
         <? else: ?>
-            <span class="bread__item"><?=$i["name"] ?></span>
+<!--            <span class="bread__item">--><?//=$i["name"] ?><!--</span>-->
         <? endif; ?>
     <? endforeach; ?>
 </div>

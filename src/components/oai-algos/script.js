@@ -1,3 +1,4 @@
+/*OAI-ALGOS*/
 window.addEventListener('load', function () {
     new Lines('.oai-algos__grid');
 });
@@ -21,6 +22,12 @@ class Lines {
     }
 
     init() {
+
+        if (window.matchMedia('(max-width: 767.98px)').matches) {
+            this.setLineHeight();
+            return;
+        }
+
         this.addLines();
         this.setQuotePosition();
     }
@@ -72,4 +79,14 @@ class Lines {
         let line = `<div class="oai-algos__line" style="top: ${y}px;width: ${x}px;"></div>`;
         this.list.insertAdjacentHTML('beforeend', line);
     }
+
+    setLineHeight() {
+        let firstItem = this.items[0],
+            lastItem = this.items[this.items.length - 1];
+
+        this.list.style.setProperty('--line-position-top', `${firstItem.offsetHeight / 2}px`);
+        this.list.style.setProperty('--line-position-bottom', `${lastItem.offsetHeight / 2}px`);
+    }
+
+
 }

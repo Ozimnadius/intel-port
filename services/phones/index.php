@@ -20,7 +20,7 @@
     </div>
     <div class="page__section">
         <div class="container">
-            <div class="container-inner point-top-right" >
+            <div class="container-inner point-top-right">
                 <? component("phones-about") ?>
             </div>
         </div>
@@ -33,6 +33,7 @@
     </div>
     <div class="page__section">
         <? component("internet-indicators", array(
+            "title" => "Базовые возможности",
             "list" => array(
                 array(),
                 array(
@@ -69,7 +70,7 @@
                 ),
                 array()
             ),
-            "bottom"=>"И множество других функций для <br> оптимизации алгоритмов обработки вызовов"
+            "bottom" => "И множество других функций для <br> оптимизации алгоритмов обработки вызовов"
         )) ?>
     </div>
     <div class="page__section">

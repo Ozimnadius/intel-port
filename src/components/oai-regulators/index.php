@@ -11,7 +11,7 @@
             <div class="oai-regulators__list">
                 <? foreach (array(1,2,3,4,5,6,7) as $i): ?>
                     <div class="oai-regulators__item">
-                        <img src="/images/content/oai/regulators/<?=$i?>.png">
+                        <img src="/images/content/oai/regulators/<?=$i?>.png" alt="lorem">
                     </div>
                 <? endforeach; ?>
             </div>
