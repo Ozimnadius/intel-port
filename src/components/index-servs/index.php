@@ -27,7 +27,8 @@ extract(array_merge($default, $vars));
                             <?= $i["title"] ?>
                         </div>
                         <? component("btn", array(
-                            "class" => "btn-main index-servs__btn-1"
+                            "class" => "btn-main index-servs__btn-1",
+                            "attrs"=>'data-event="openForm" data-name="formCooperation"',
                         )) ?>
                         <? component("btn", array(
                             "href"=> $url.$i["url"]."/",

@@ -20,4 +20,12 @@
     background: none;
     margin-bottom: 0;
   }
+
+  &--area{
+    resize: none;
+    height: 140px;
+    @media (max-width: 1439.98px){
+      height: 140px;
+    }
+  }
 }

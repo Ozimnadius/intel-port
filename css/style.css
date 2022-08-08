@@ -1521,6 +1521,11 @@ textarea {
   margin-bottom: 0;
 }
 
+.input--area {
+  resize: none;
+  height: 140px;
+}
+
 .select {
   max-width: 100%;
   width: 100%;
@@ -6937,6 +6942,10 @@ textarea {
     padding: 12px 20px;
   }
 
+  .input--area {
+    height: 140px;
+  }
+
   .select .jq-selectbox__select {
     height: 50px;
     font: 16px/23px Gilroy, Arial, sans-serif;
@@ -8592,6 +8601,10 @@ textarea {
 
   .feed__title-icon {
     font-size: 18px;
+  }
+
+  .select .jq-selectbox__dropdown {
+    max-width: 100%;
   }
 
   .index-about__container {

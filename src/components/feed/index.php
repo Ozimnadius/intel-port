@@ -74,17 +74,7 @@ extract(array_merge($default, $vars));
                                 "name" => "services",
                                 "class" => "feed__select",
                                 "placeholder" => "Выбрать услугу",
-                                "options" => array(
-                                    "Интернет",
-                                    "Организация каналов VPN",
-                                    "Телефония",
-                                    "Проектирование и строительство сетей",
-                                    "Защита от DDoS-атак",
-                                    "Виртуальные серверы",
-                                    "Colocation",
-                                    "Видеонаблюдение",
-                                    "Сервисная поддержка"
-                                )
+                                "options" => $GLOBALS['nav'][0]["subnav"]
                             )) ?>
                         </div>
                     <? endif; ?>

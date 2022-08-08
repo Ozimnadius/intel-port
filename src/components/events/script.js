@@ -64,6 +64,7 @@ class Events {
         e.preventDefault();
         let dataset = e.currentTarget.dataset
         this.templates.open(dataset.name);
+
         $('.select').styler();
         $('.input[type="tel"]').inputmask("+7(999)999-99-99");
 

@@ -7,6 +7,14 @@
             "btnName" => "Оставить заявку"
         )); ?>
     </div>
+    <div id="formOai">
+        <? component("form", array(
+            "href" => "/php/request.php",
+            "title" => "Операторам и интеграторам",
+            "fields" => array("name", "tel", "email", "select"),
+            "btnName" => "Оставить заявку"
+        )); ?>
+    </div>
     <div id="formCall">
         <? component("form", array(
             "href" => "/php/call.php",
@@ -15,6 +23,23 @@
             "btnName" => "Оставить заявку"
         )); ?>
     </div>
+    <div id="formFeed">
+        <? component("form", array(
+            "href" => "/php/call.php",
+            "title" => "Обратная связь",
+            "fields" => array("name", "tel", "email"),
+            "btnName" => "Оставить заявку"
+        )); ?>
+    </div>
+    <div id="formCooperation">
+        <? component("form", array(
+            "href" => "/php/call.php",
+            "title" => "Сотрудничество",
+            "fields" => array("name", "tel", "email", "textarea"),
+            "btnName" => "Оставить заявку"
+        )); ?>
+    </div>
+
     <div id="formOk">
         <div class="form">
             <div class="form__wrap">

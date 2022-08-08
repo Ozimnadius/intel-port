@@ -46,18 +46,15 @@
                         "name" => "services",
                         "class" => "form__select",
                         "placeholder" => "Выбрать услугу",
-                        "options" => array(
-                            "Интернет",
-                            "Организация каналов VPN",
-                            "Телефония",
-                            "Проектирование и строительство сетей",
-                            "Защита от DDoS-атак",
-                            "Виртуальные серверы",
-                            "Colocation",
-                            "Видеонаблюдение",
-                            "Сервисная поддержка"
-                        )
+                        "options" => $GLOBALS['nav'][0]["subnav"]
                     )) ?>
+                </div>
+            <? endif; ?>
+            <? if (in_array("textarea", $fields)): ?>
+                <div class="form__field">
+                    <textarea class="input input--area"
+                              name="msg"
+                              placeholder="Краткое описание задачи"></textarea>
                 </div>
             <? endif; ?>
         </div>
@@ -65,7 +62,7 @@
         <div class="form__policy">
             <? component("accept", array(
                 "name" => "accept",
-                "content" => '<p>Согласен на обработку персональных данных в соответствии с <a href="/policy/">Политикой конфиденциальности.</a></p>'
+                "content" => '<span>Согласен на обработку персональных данных в соответствии с <a href="/policy/">Политикой конфиденциальности.</a></span>'
             )) ?>
         </div>
 

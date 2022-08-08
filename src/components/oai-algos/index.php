@@ -36,7 +36,8 @@ extract(array_merge($default, $vars));
                         <p>Оставьте свои данные и наши специалисты свяжутся с Вами</p>
                         <? component("btn", array(
                             "class" => "btn-main oai-algos__btn",
-                            "text" => "Сотрудничество"
+                            "text" => "Сотрудничество",
+                            "attrs"=>'data-event="openForm" data-name="formCooperation"'
                         )) ?>
                     </div>
                 </div>

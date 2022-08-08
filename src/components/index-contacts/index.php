@@ -64,7 +64,8 @@
                 </div>
                 <? component("btn", array(
                     "class" => "btn-main index-contacts__btn",
-                    "text" => "Обратная связь"
+                    "text" => "Обратная связь",
+                    "attrs"=>'data-event="openForm" data-name="formFeed"'
                 )) ?>
             </div>
         </div>

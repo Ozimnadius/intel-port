@@ -40,7 +40,8 @@
                     <div class="contacts-banner__item">
                         <? component("btn", array(
                             "class" => "btn-main contacts-banner__btn",
-                            "text" => "Обратная связь"
+                            "text" => "Обратная связь",
+                            "attrs"=>'data-event="openForm" data-name="formFeed"'
                         )) ?>
                     </div>
                 </div>
