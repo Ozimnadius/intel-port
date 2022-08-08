@@ -88,7 +88,8 @@
                         </div>
                         <? component("btn", array(
                             "class" => "btn-border slide-big__btn",
-                            "text" => "Консультироваться"
+                            "text" => "Консультироваться",
+                            "attrs"=>'data-event="openForm" data-name="formCall"'
                         )) ?>
                         <div class="slide-big__info">
                             <svg width="166" height="34" viewBox="0 0 166 34" fill="none" xmlns="http://www.w3.org/2000/svg">
