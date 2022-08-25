@@ -1,5 +1,6 @@
 /*EVENTS*/
 window.addEventListener('load', function () {
+
     new Events();
 });
 

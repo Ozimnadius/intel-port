@@ -13,4 +13,5 @@
 // @prepros-append components/footer-nav/script.js
 // @prepros-append components/misc/script.js
 // @prepros-append components/feed/script.js
+// @prepros-append components/advantages/script.js
 

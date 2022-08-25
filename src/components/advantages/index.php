@@ -39,31 +39,34 @@ $list = array(
             <div class="advantages__title title">
                 Преимущества
             </div>
-        </div>
-    </div>
-    <div class="advantages__list">
-        <? foreach ($list as $i): ?>
-            <div class="advantages__item advantage">
-                <div class="container">
-                    <div class="container-inner advantage__container">
-                        <div class="advantage__left">
-                            <div class="advantage__title">
-                                <?=$i["title"] ?>
+            <div class="advantages__list">
+                <? foreach ($list as $i): ?>
+                    <div class="advantages__item advantage">
+                        <div class="advantage__flip">
+                            <div class="advantage__front">
+                                <div class="advantage__img-big">
+                                    <img src="<?= $i["img"] ?>" alt="<?= $i["title"] ?>">
+                                </div>
+                                <div class="advantage__title">
+                                    <?= $i["title"] ?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="advantage__center">
-                            <div class="advantage__img">
-                                <img src="<?=$i["img"] ?>" alt="<?=$i["title"] ?>">
-                            </div>
-                        </div>
-                        <div class="advantage__right">
-                            <div class="advantage__content">
-                                <?=$i["content"] ?>
+                            <div class="advantage__back">
+                                <div class="advantage__img">
+                                    <img src="<?= $i["img"] ?>" alt="<?= $i["title"] ?>">
+                                </div>
+                                <div class="advantage__title">
+                                    <?= $i["title"] ?>
+                                </div>
+                                <div class="advantage__content">
+                                    <?= $i["content"] ?>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                <? endforeach; ?>
             </div>
-        <? endforeach; ?>
+        </div>
     </div>
+
 </div>
