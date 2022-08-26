@@ -70,20 +70,44 @@
   }
 
   &__content {
-    max-width: 420px;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 
-    color: var(--txt-dark);
-    font-size: 18px;
-    font-weight: 500;
+
     @media (max-width: 1439.98px){
-      font-size: 14px;
       gap: 20px;
     }
     @media (max-width: 767.98px){
       display: none;
+    }
+
+    p{
+      position: relative;
+      color: var(--txt-dark);
+      font-size: 18px;
+      font-weight: 500;
+
+      @media (max-width: 1439.98px){
+        font-size: 14px;
+      }
+
+      &.active{
+        padding-left: 45px;
+        color: var(--yellow);
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 12px;
+          width: 29px;
+          height: 2px;
+          background: var(--yellow);
+        }
+      }
     }
   }
 

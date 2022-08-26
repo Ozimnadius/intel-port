@@ -2151,7 +2151,7 @@ textarea {
 }
 
 .index-lics__content {
-  max-width: 420px;
+  max-width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2160,9 +2160,29 @@ textarea {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 30px;
+}
+
+.index-lics__content p {
+  position: relative;
   color: var(--txt-dark);
   font-size: 18px;
   font-weight: 500;
+}
+
+.index-lics__content p.active {
+  padding-left: 45px;
+  color: var(--yellow);
+}
+
+.index-lics__content p.active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 29px;
+  height: 2px;
+  background: var(--yellow);
 }
 
 .index-lics__right {
@@ -7097,8 +7117,11 @@ textarea {
   }
 
   .index-lics__content {
-    font-size: 14px;
     gap: 20px;
+  }
+
+  .index-lics__content p {
+    font-size: 14px;
   }
 
   .index-lics__proportion {
