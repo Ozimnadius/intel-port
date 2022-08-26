@@ -1,36 +1,43 @@
 <svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_1100_47077" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="600" height="600">
-<circle cx="299.664" cy="299.664" r="34.5677" stroke="black" stroke-width="1.73077"/>
-<circle cx="300.018" cy="300.018" r="49.922" stroke="black" stroke-width="1.73077"/>
-<circle cx="300.009" cy="300.009" r="99.5283" stroke="black" stroke-width="1.73077"/>
-<circle cx="299.864" cy="299.864" r="143.229" stroke="black" stroke-width="1.73077"/>
-<circle cx="299.855" cy="299.855" r="192.835" stroke="black" stroke-width="1.73077"/>
-<circle cx="299.437" cy="299.437" r="224.725" stroke="black" stroke-width="1.73077"/>
-<circle cx="300.145" cy="300.145" r="255.434" stroke="black" stroke-width="1.73077"/>
-<circle cx="300.145" cy="300.145" r="255.434" stroke="black" stroke-width="1.73077"/>
-<circle cx="300.554" cy="300.554" r="273.15" stroke="black" stroke-width="1.73077"/>
-<circle cx="299.755" cy="299.755" r="288.505" stroke="black" stroke-width="1.73077"/>
-<circle cx="300" cy="300" r="299.135" stroke="black" stroke-width="1.73077"/>
-<line x1="300.865" y1="3.78272e-08" x2="300.865" y2="600" stroke="black" stroke-width="1.73077"/>
-<line x1="379.297" y1="10.6087" x2="224.006" y2="590.164" stroke="black" stroke-width="1.73077"/>
-<line x1="450.749" y1="40.8175" x2="150.749" y2="560.433" stroke="black" stroke-width="1.73077"/>
-<line x1="512.92" y1="88.3043" x2="88.6555" y2="512.568" stroke="black" stroke-width="1.73077"/>
-<line x1="560.048" y1="150.749" x2="40.4327" y2="450.749" stroke="black" stroke-width="1.73077"/>
-<line x1="589.839" y1="223.528" x2="10.2837" y2="378.82" stroke="black" stroke-width="1.73077"/>
-<line x1="600" y1="300.865" x2="-7.56544e-08" y2="300.865" stroke="black" stroke-width="1.73077"/>
-<line x1="589.391" y1="379.297" x2="9.83577" y2="224.006" stroke="black" stroke-width="1.73077"/>
-<line x1="559.183" y1="450.749" x2="39.5673" y2="150.749" stroke="black" stroke-width="1.73077"/>
-<line x1="511.696" y1="512.92" x2="87.4316" y2="88.6555" stroke="black" stroke-width="1.73077"/>
-<line x1="449.251" y1="560.048" x2="149.251" y2="40.4327" stroke="black" stroke-width="1.73077"/>
-<line x1="222.804" y1="9.91518" x2="378.096" y2="589.471" stroke="black" stroke-width="1.73077"/>
-</mask>
-<g mask="url(#mask0_1100_47077)">
-<rect x="0.000488281" width="600" height="600" fill="url(#paint0_radial_1100_47077)"/>
-</g>
-<defs>
-<radialGradient id="paint0_radial_1100_47077" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(274.286 299.471) rotate(85.1095) scale(301.627 301.573)">
-<stop stop-color="#F08119"/>
-<stop offset="1" stop-color="#9536DF"/>
-</radialGradient>
-</defs>
+    <g>
+    <g>
+    <mask id="mask0_1100_47077" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="600" height="600">
+        <circle cx="299.664" cy="299.664" r="34.5677" stroke="black" stroke-width="1.73077"/>
+        <circle cx="300.018" cy="300.018" r="49.922" stroke="black" stroke-width="1.73077"/>
+        <circle cx="300.009" cy="300.009" r="99.5283" stroke="black" stroke-width="1.73077"/>
+        <circle cx="299.864" cy="299.864" r="143.229" stroke="black" stroke-width="1.73077"/>
+        <circle cx="299.855" cy="299.855" r="192.835" stroke="black" stroke-width="1.73077"/>
+        <circle cx="299.437" cy="299.437" r="224.725" stroke="black" stroke-width="1.73077"/>
+        <circle cx="300.145" cy="300.145" r="255.434" stroke="black" stroke-width="1.73077"/>
+        <circle cx="300.145" cy="300.145" r="255.434" stroke="black" stroke-width="1.73077"/>
+        <circle cx="300.554" cy="300.554" r="273.15" stroke="black" stroke-width="1.73077"/>
+        <circle cx="299.755" cy="299.755" r="288.505" stroke="black" stroke-width="1.73077"/>
+        <circle cx="300" cy="300" r="299.135" stroke="black" stroke-width="1.73077"/>
+        <line x1="300.865" y1="3.78272e-08" x2="300.865" y2="600" stroke="black" stroke-width="1.73077"/>
+        <line x1="379.297" y1="10.6087" x2="224.006" y2="590.164" stroke="black" stroke-width="1.73077"/>
+        <line x1="450.749" y1="40.8175" x2="150.749" y2="560.433" stroke="black" stroke-width="1.73077"/>
+        <line x1="512.92" y1="88.3043" x2="88.6555" y2="512.568" stroke="black" stroke-width="1.73077"/>
+        <line x1="560.048" y1="150.749" x2="40.4327" y2="450.749" stroke="black" stroke-width="1.73077"/>
+        <line x1="589.839" y1="223.528" x2="10.2837" y2="378.82" stroke="black" stroke-width="1.73077"/>
+        <line x1="600" y1="300.865" x2="-7.56544e-08" y2="300.865" stroke="black" stroke-width="1.73077"/>
+        <line x1="589.391" y1="379.297" x2="9.83577" y2="224.006" stroke="black" stroke-width="1.73077"/>
+        <line x1="559.183" y1="450.749" x2="39.5673" y2="150.749" stroke="black" stroke-width="1.73077"/>
+        <line x1="511.696" y1="512.92" x2="87.4316" y2="88.6555" stroke="black" stroke-width="1.73077"/>
+        <line x1="449.251" y1="560.048" x2="149.251" y2="40.4327" stroke="black" stroke-width="1.73077"/>
+        <line x1="222.804" y1="9.91518" x2="378.096" y2="589.471" stroke="black" stroke-width="1.73077"/>
+    </mask>
+    <g mask="url(#mask0_1100_47077)">
+        <rect x="0.000488281" width="600" height="600" fill="url(#paint0_radial_1100_47077)"/>
+    </g>
+    <defs>
+        <radialGradient id="paint0_radial_1100_47077" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(274.286 299.471) rotate(85.1095) scale(301.627 301.573)">
+            <stop stop-color="#F08119"/>
+            <stop offset="1" stop-color="#9536DF"/>
+        </radialGradient>
+    </defs>
+    </g>
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="12s" from="0 300 300" to="360 300 300" repeatCount="indefinite">
+        </animateTransform>
+    </g>
 </svg>
