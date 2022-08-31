@@ -4,7 +4,7 @@ window.addEventListener('load', function (){
       slidesPerView: "auto",
       spaceBetween: 10,
       centeredSlides: false,
-      loop: true,
+      initialSlide: 1,
       navigation: {
          nextEl: '.recs__next',
          prevEl: '.recs__prev',
